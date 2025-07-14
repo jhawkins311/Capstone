@@ -43,8 +43,8 @@ if uploaded_file:
     # Button to Generate
     if st.button("🚀 Generate & Evaluate Synthetic Data"):
         model_options = [
-            ("CTGAN", CTGANSynthesizer(metadata, epochs=50, verbose=True)),
-            ("TVAE", TVAESynthesizer(metadata, epochs=50, verbose=True)),
+            ("CTGAN", CTGANSynthesizer(metadata, epochs=30, verbose=True)),
+            ("TVAE", TVAESynthesizer(metadata, epochs=30, verbose=True)),
             ("Gaussian Copula", GaussianCopulaSynthesizer(metadata))
         ]
 
