@@ -1,3 +1,6 @@
 streamlit
 pandas
-sdv
+scikit-learn
+numpy
+matplotlib
+sdv[all]
