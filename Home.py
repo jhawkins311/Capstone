@@ -31,8 +31,8 @@ if uploaded_file:
     st.write("### 📊 Detected Metadata")
     st.json(metadata.to_dict())
 
-    if st.button("🚀 Generate & Evaluate Synthetic Data"):
-        with st.spinner("Training CTGAN... this may take a few moments"):
+    if st.progress("🚀 Generate & Evaluate Synthetic Data"):
+        with st.progress("Training CTGAN... this may take a few moments"):
             synthesizer = CTGANSynthesizer(metadata, epochs=300, verbose=True)
             synthesizer.fit(df)
             synthetic_df = synthesizer.sample(len(df))
@@ -40,7 +40,7 @@ if uploaded_file:
         st.success("Synthetic data generated successfully!")
 
         # Run Evaluation
-        with st.spinner("Running diagnostic and quality reports..."):
+        with st.progress("Running diagnostic and quality reports..."):
             diagnostic = run_diagnostic(real_data=df, synthetic_data=synthetic_df, metadata=metadata)
             quality = evaluate_quality(real_data=df, synthetic_data=synthetic_df, metadata=metadata)
 
