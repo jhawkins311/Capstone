@@ -13,12 +13,12 @@ st.markdown("""
 
 Welcome to Synthetic Data 101! 
 
-This is a free and open-source tool to explore, compare, and generate synthetic datasets for privacy-compliant machine learning and education.
+In this interactive course, you will explore Python libraries, examine synthetic datasets, and experiment with making your own synthetic datasets for privacy-compliant machine learning and education.
 
-### For this course, just follow the tabs in the sidebar:
-1. **How do we make it?** – Learn about the different systhetic data models and when to use them
-2. **What does it look like?** – See how each model performs on real datasets
-3. **Can I try it?** – Upload your own dataset, generate multiple synthetic datasets, and view the resutling evaluation dashboard
+### Just follow the tabs in the sidebar:
+1. **Synthetic Data Vault Libraries** - Learn about the different systhetic data generation models and when to use each
+2. **Examples of Synthetic Data** – See how each model performs on real datasets
+3. **Try It Yourself!** – Upload your own dataset, generate synthetic versions using multiple libraries, and view the resutling evaluation dashboard
 
 ### If you would like to learn more about synthetic data or working on a related research project, please watch our tool development video: 
 [Hyperlink to the final capstone presentation]
