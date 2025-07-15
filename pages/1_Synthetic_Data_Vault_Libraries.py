@@ -10,7 +10,10 @@ st.markdown("""
 
 Welcome to **Module 1** of our Synthetic Data 101 course!  
 
-Here, you'll explore three generative models from the **[Synthetic Data Vault (SDV)](https://docs.sdv.dev/)** library: 
+Here, you'll explore basic table synthesizers. These models specialize in processing a single table of data and outputting a synethetic verision. 
+
+
+The main three generative models from the **[Synthetic Data Vault (SDV)](https://docs.sdv.dev/)** library are: 
 
 ### (1) CTGAN - "The CTGAN Synthesizer uses GAN-based, deep learning methods to learn from real data. It is the benchmark library used to produce synthetic data with high fidelity. However, it takes the longest. 
 
@@ -19,10 +22,7 @@ Here, you'll explore three generative models from the **[Synthetic Data Vault (S
 ### (3) GaussianCopula - The Gaussian Copula Synthesizer uses classic statistiical ML methods to learn from real data. It is fast and produces quality results, but it specializes on numerical-only datasets. 
 
 
-These models are basic table synthesizers. This means the model can process a single table of data and output a synethetic verision. 
-
-
-### A quick guide for each model
+### A Quick Guide on SDV Libraries
 
 | Generative Model   | Type of Data           | Strengths                                           | Limitations                    | Speed                   |
 |--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
