@@ -28,6 +28,6 @@ These models are basic table synthesizers. This means the model can process a si
 |--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
 | **CTGAN**          | Numerical, Categorical | Great for mixed-type data, imbalanced columns       | Requires tuning                | Slow                    |      
 | **TVAE**           | Numerical, Categorical | Used for complex data with non-linear relationships | Slightly more complex          | Medium                  |     
-| **GaussianCopula** | Only Numerical         | Fast & easy to use                                  | Assumes Gaussian distributions | Fast                    |    
+| **GaussianCopula** | Only Numerical         | Fast & easy to use                                  | Uses statistical estimates     | Fast                    |    
 
 """)
