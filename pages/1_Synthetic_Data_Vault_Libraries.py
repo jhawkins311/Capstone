@@ -12,7 +12,7 @@ Welcome to **Module 1** of our Synthetic Data 101 course!
 
 Here, you'll explore three generative models from the **[Synthetic Data Vault (SDV)](https://docs.sdv.dev/)** library: 
 
-### (1) GaussianCopula - The Gaussian Copula Synthesizer uses classic statistiical ML methods to learn from real data. It is fast and produces quality results, but it only works with numerical data. 
+### (1) GaussianCopula - The Gaussian Copula Synthesizer uses classic statistiical ML methods to learn from real data. It is fast and produces quality results, but it specializes on numerical-only datasets. 
 
 ### (2) TVAE - The TVAE Synthesizer uses a variational autoencoder (VAE)-based, neural network techniques to learn from real data. It has a medium speed and increased quality, but it takes longer to learn.
 
@@ -28,6 +28,6 @@ These models are basic table synthesizers. This means the model can process a si
 |--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
 | **CTGAN**          | Numerical, Categorical | Great for mixed-type data, imbalanced columns       | Requires tuning                | Slow                    |      
 | **TVAE**           | Numerical, Categorical | Used for complex data with non-linear relationships | Slightly more complex          | Medium                  |     
-| **GaussianCopula** | Only Numerical         | Fast & easy to use                                  | Uses statistical estimates     | Fast                    |    
+| **GaussianCopula** | Mostly Numerical         | Fast & easy to use                                  | Uses statistical estimates   | Fast                    |    
 
 """)
