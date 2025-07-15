@@ -1,31 +1,33 @@
 import streamlit as st
-import pandas as pd
-from sdv.metadata import SingleTableMetadata
 
-st.title("📤 Upload Your Dataset")
+#Page Layout & Titles
+st.set_page_config(page_title="SDV Libraries")
 
-# File upload
-uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
+st.title("Synthetic Data Vault Libraries")
 
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-    st.session_state["df"] = df
+# Page Content - SDV Libaries
+st.markdown("""
 
-    st.write("### Dataset Preview")
-    st.dataframe(df.head())
+Welcome to **Module 1** of our Synthetic Data 101 course!  
 
-    # Metadata detection
-    metadata = SingleTableMetadata()
-    metadata.detect_from_dataframe(data=df)
-    st.session_state["metadata"] = metadata
+Here, you'll explore three generative models from the **[Synthetic Data Vault (SDV)](https://docs.sdv.dev/)** library: 
 
-    st.write("### Metadata")
-    st.json(metadata.to_dict())
+### (1) GaussianCopula - The Gaussian Copula Synthesizer uses classic statistiical ML methods to learn from real data. It is fast and produces quality results, but it only works with numerical data. 
 
-    # Column selection
-    columns = df.columns.tolist()
-    sensitive = st.multiselect("Select sensitive columns (for privacy)", columns)
-    target = st.selectbox("Select target column (for ML evaluation)", [None] + columns)
+### (2) TVAE - The TVAE Synthesizer uses a variational autoencoder (VAE)-based, neural network techniques to learn from real data. It has a medium speed and increased quality, but it takes longer to learn.
 
-    st.session_state["sensitive_cols"] = sensitive
-    st.session_state["target_col"] = target
+### (3) CTGAN - "The CTGAN Synthesizer uses GAN-based, deep learning methods to learn from real data. It is the benchmark library used to produce synthetic data with high fidelity. However, it takes the longest. 
+
+
+These models are basic table synthesizers. This means the model can process a single table of data and output a synethetic verision. 
+
+
+### A quick guide for each model
+
+| Generative Model   | Type of Data           | Strengths                                      | Limitations                    | Speed                   |
+|--------------------|------------------------|------------------------------------------------|--------------------------------|-------------------------|
+| **CTGAN**          | Numerical, Categorical | Great for mixed-type data, imbalanced columns  | Requires tunining              | Slow                    |      
+| **TVAE**           | Numerical, Categorical | Captures non-linearities                       | Slightly more complex          | Medium                  |     
+| **GaussianCopula** | Only Numerical         | Fast & easy to use                             | Assumes Gaussian distributions | Fast                    |    
+
+""")
