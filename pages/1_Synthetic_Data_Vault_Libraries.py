@@ -24,10 +24,10 @@ These models are basic table synthesizers. This means the model can process a si
 
 ### A quick guide for each model
 
-| Generative Model   | Type of Data           | Strengths                                      | Limitations                    | Speed                   |
-|--------------------|------------------------|------------------------------------------------|--------------------------------|-------------------------|
-| **CTGAN**          | Numerical, Categorical | Great for mixed-type data, imbalanced columns  | Requires tunining              | Slow                    |      
-| **TVAE**           | Numerical, Categorical | Captures non-linearities                       | Slightly more complex          | Medium                  |     
-| **GaussianCopula** | Only Numerical         | Fast & easy to use                             | Assumes Gaussian distributions | Fast                    |    
+| Generative Model   | Type of Data           | Strengths                                           | Limitations                    | Speed                   |
+|--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
+| **CTGAN**          | Numerical, Categorical | Great for mixed-type data, imbalanced columns       | Requires tuning                | Slow                    |      
+| **TVAE**           | Numerical, Categorical | Used for complex data with non-linear relationships | Slightly more complex          | Medium                  |     
+| **GaussianCopula** | Only Numerical         | Fast & easy to use                                  | Assumes Gaussian distributions | Fast                    |    
 
 """)
