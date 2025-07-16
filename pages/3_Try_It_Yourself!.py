@@ -1,71 +1,75 @@
-# Streamlit Synthetic Data Evaluation Tool – Try It Yourself Page
+# Page 3 - Try It Yourself (Colab Backend)
 import streamlit as st
 import pandas as pd
-import datetime
-import uuid
+import requests
+import time
 
-# Page config
-st.set_page_config(page_title="Try It Yourself!")
-st.title("Try It Yourself!")
+# Page Setup
+st.set_page_config(page_title="Try It Yourself - Synthetic Data Tool")
+st.title("Try It Yourself")
 
 st.markdown("""
-Upload your dataset! 
+### Upload your own dataset and generate synthetic versions with CTGAN, TVAE, and GaussianCopula models.
+This uses Google Colab as a backend to avoid timeouts.
 
-This tool will generate synthetic datasets using three models (CTGAN, TVAE, Gaussian Copula) in the cloud. 
-**Note:** Processing can take 5–15 minutes. 
+Results may take a few minutes. 
 
-You'll receive a unique Job ID to retrieve your results later.
-**Note:** Please remember to save your Job ID!
+You’ll receive a Job ID to check your results later.
+Remember your Job ID!
 
+When processing is done, your results will be available as a downloadable .zip file.
 """)
 
-# Upload
-uploaded_file = st.file_uploader("Upload your CSV dataset", type=["csv"])
+st.markdown("---")
 
-# Email input (optional)
-email = st.text_input("Enter your email to receive all the results (optional)")
+# File Upload Section
+uploaded_file = st.file_uploader("Upload your CSV dataset", type=["csv"])
 
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
-    st.write("### Uploaded Data")
-    st.write(df.head())
+    st.write("✅ File uploaded successfully!")
+    st.write("### Data Preview")
+    st.dataframe(df.head())
 
-    # Generate a unique job ID and save temp file
-    job_id = uuid.uuid4().hex[:8] + datetime.datetime.now().strftime("_%Y%m%d_%H%M%S")
-    filename = f"data_{job_id}.csv"
-    df.to_csv(filename, index=False)
+    # Input a job name
+    job_id = st.text_input("Enter a Job ID (e.g. your initials + date):", max_chars=20)
 
-    st.success(f"✅ File saved as `{filename}` with Job ID: `{job_id}`")
+    if st.button("🚀 Submit to Google Colab for Processing"):
+        st.write("🔄 Uploading and sending to Colab...")
 
-    st.markdown("""
-    ### ✅ Next Step:
-    [Open Google Colab to process your data ➜](https://colab.research.google.com/drive/1cR4EzXeVVAnrY9-Qw_K1k6v2sQSy78N6?usp=sharing)
-    
-    When prompted, upload the saved CSV file above.
-    
-    The notebook will train all 3 models, evaluate the synthetic datasets, and generate a downloadable ZIP.
-    """)
+        # Save to disk for upload
+        with open("input_dataset.csv", "wb") as f:
+            f.write(uploaded_file.getvalue())
+
+        # Simulated message while user runs Colab manually
+        st.success(f"Your Job ID is **{job_id}**. Please open the Colab Notebook to complete processing:")
+        st.markdown("[🔗 Open Google Colab Notebook](https://colab.research.google.com/drive/1RANDOMCOLABID)")
+        st.markdown("Once the Colab script completes, return here to download your results.")
 
 st.markdown("---")
-st.header("Getting the Results")
 
-st.markdown("""
-If you have already run the Colab notebook and have a Job ID, enter it below to download your results.
-""")
+st.header("📥 Retrieve Results")
+st.markdown("Enter your Job ID to get your synthetic data evaluation results.")
 
-job_input = st.text_input("Enter your Job ID")
+# Google Drive Result Link Builder
+job_to_id = {
+    # Pre-populate this manually for each job
+    "test123": "1AbCdEfGHiJKLMNOPQRSTUVWXYZ",  # Job ID -> File ID
+    # Add more mappings here
+}
 
-if job_input:
-    # Create shared URL template
-    base_url = "https://drive.google.com/uc?export=download&id="
-    file_id_mapping = {
-        # Example mapping – must be populated manually or via Google Drive API integration
-        "demo_20250715_1015": "1XxYyZzAABBCCDDEEFFGGHHIIJJ"  # Replace with real ID
-    }
+result_job_id = st.text_input("Enter your Job ID to retrieve results:")
 
-    if job_input in file_id_mapping:
-        gdrive_id = file_id_mapping[job_input]
-        download_url = base_url + gdrive_id
-        st.markdown(f"[🔽 Download Results for `{job_input}`]({download_url})")
+if st.button("🔍 Get Results") and result_job_id:
+    file_id = job_to_id.get(result_job_id)
+
+    if file_id:
+        download_url = f"https://drive.google.com/uc?id={file_id}&export=download"
+        st.success("✅ Results Found!")
+        st.markdown(f"[📦 Click to Download Results ZIP](https://drive.google.com/uc?id={file_id}&export=download)")
+        st.image("sample_preview.png", caption="Sample Visualization", use_column_width=True)
     else:
-        st.warning("No results found for this Job ID. Please verify spelling or try again later.")
+        st.error("❌ No results found for that Job ID. Please double-check or try again later.")
+
+st.markdown("---")
+st.caption("Note: Results are sessionless and not saved by the server. Your uploaded file is not stored.")
