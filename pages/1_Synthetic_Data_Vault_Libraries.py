@@ -28,6 +28,6 @@ The main three generative models from the **[Synthetic Data Vault (SDV)](https:/
 |--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
 | **CTGAN**          | Numerical, Categorical | Great for mixed-type data, imbalanced columns       | Requires tuning                | Slow                    |      
 | **TVAE**           | Numerical, Categorical | Used for complex data with non-linear relationships | Slightly more complex          | Medium                  |     
-| **GaussianCopula** | Mostly Numerical         | Fast & easy to use                                  | Uses statistical estimates   | Fast                    |    
+| **GaussianCopula** | Mostly Numerical       | Fast & easy to use                                  | Uses statistical estimates     | Fast                    |    
 
 """)
