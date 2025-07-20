@@ -4,14 +4,14 @@
 import streamlit as st
 
 # Page Configuration & Titles
-st.set_page_config(page_title="Synthetic Data 101")
+st.set_page_config(page_title="Synthetic Data 101", layout="wide")
 
 st.title("A Beginner's Guide to Synthetic Data")
 
 # Text for Homepage - Explains the "course" structure" 
 st.markdown("""
 
-Welcome to Synthetic Data 101! 
+Welcome to Synthetic Data 101!
 
 In this interactive course, you will explore Python libraries, examine synthetic datasets, and experiment with making your own synthetic datasets for privacy-compliant machine learning and education.
 
