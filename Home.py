@@ -20,9 +20,9 @@ In this interactive course, you will explore Python libraries, examine synthetic
 2. **Examples of Synthetic Data** – See how each model performs on real datasets
 3. **Try It Yourself!** – Upload your own dataset, generate synthetic versions using multiple libraries, and view the resutling evaluation dashboard
 
-### If you would like to learn more about synthetic data or working on a related research project, please watch our tool development video: 
+### If you would like to learn more about synthetic data, please watch our tool development video: 
 [Hyperlink to the final capstone presentation]
 
 
-❤️ This webapp was deeigned with love for students, data analysts, professional who want to try synthetic data tools before investing in expensive platforms ❤️
+❤️ This webapp was designed with love for students, data analysts, professional who want to try synthetic data tools before investing in expensive platforms ❤️
 """)
