@@ -36,10 +36,10 @@ if uploaded_file is not None:
             # 4. Train Models
             # ===============================
             models = {
-                "CTGAN": CTGANSynthesizer(metadata, epochs=30, verbose=False),
-                "TVAE": TVAESynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, epochs=30),
+                "CTGAN": CTGANSynthesizer(metadata, epochs=10, verbose=False),
+                "TVAE": TVAESynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, epochs=10),
                 "GaussianCopula": GaussianCopulaSynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, default_distribution='beta'),
-                "CopulaGAN": CopulaGANSynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, epochs=30, verbose=False),
+                "CopulaGAN": CopulaGANSynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, epochs=10, verbose=False),
             }
 
             synthetic_data_dict = {}
