@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
+import tempfile
 from sdv.metadata import Metadata
 from sdv.single_table import (
     CTGANSynthesizer,
@@ -59,9 +60,12 @@ if uploaded_file is not None:
         # ===============================
         # 5. Allow Download of Metadata JSON
         # ===============================
-        metadata_bytes = BytesIO()
-        metadata.save_to_json(metadata_bytes)
-        metadata_bytes.seek(0)
+        with tempfile.NamedTemporaryFile(suffix=".json", delete=False) as tmp_file:
+            temp_json_path = tmp_file.name
+            metadata.save_to_json(filepath=temp_json_path, mode="overwrite")
+
+        with open(temp_json_path, "rb") as f:
+            metadata_bytes = f.read()
 
         st.download_button(
             label="📥 Download Metadata JSON",
@@ -114,5 +118,7 @@ if uploaded_file is not None:
             st.subheader("🎯 Target Variable Preview")
             for name, df in synthetic_data_dict.items():
                 st.markdown(f"**{name}**")
+                st.dataframe(df[target_variable].value_counts())
+
                 st.dataframe(df[target_variable].value_counts())
 
