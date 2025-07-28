@@ -9,6 +9,10 @@ from sdv.single_table import (
     GaussianCopulaSynthesizer,
     CopulaGANSynthesizer
 )
+import warnings
+from sklearn.exceptions import ConvergenceWarning
+warnings.filterwarnings("ignore", category=ConvergenceWarning)
+
 
 st.set_page_config(page_title="Synthetic Data Generator", layout="wide")
 st.title("🧬 Synthetic Data Generator App")
