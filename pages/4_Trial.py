@@ -84,10 +84,32 @@ if uploaded_file is not None:
         # ===============================
         with st.spinner("🧠 Training synthesizers and generating synthetic data..."):
             models = {
-                "CTGAN": CTGANSynthesizer(metadata, epochs=10, verbose=False),
-                "TVAE": TVAESynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, epochs=10),
-                "GaussianCopula": GaussianCopulaSynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, default_distribution='beta'),
-                "CopulaGAN": CopulaGANSynthesizer(metadata, enforce_min_max_values=True, enforce_rounding=True, epochs=10, verbose=False),
+                "CTGAN": CTGANSynthesizer(
+                    metadata,
+                    epochs=10,
+                    verbose=False,
+                    cuda=False,
+                ),
+                "TVAE": TVAESynthesizer(
+                    metadata,
+                    enforce_min_max_values=True,
+                    enforce_rounding=True,
+                    epochs=10,
+                ),
+                "GaussianCopula": GaussianCopulaSynthesizer(
+                    metadata,
+                    enforce_min_max_values=True,
+                    enforce_rounding=True,
+                    default_distribution='beta',
+                ),
+                "CopulaGAN": CopulaGANSynthesizer(
+                    metadata,
+                    enforce_min_max_values=True,
+                    enforce_rounding=True,
+                    epochs=10,
+                    verbose=False,
+                    cuda=False,
+                ),
             }
 
             synthetic_data_dict = {}
