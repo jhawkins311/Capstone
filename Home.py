@@ -11,17 +11,30 @@ st.title("A Beginner's Guide to Synthetic Data")
 # Text for Homepage - Explains the "course" structure" 
 st.markdown("""
 
-Welcome to Synthetic Data 101!
+Welcome to Synthetic Data 101, an interactive course designed for student, professionals, and data enthusiasts eager to explore the world of synthetic data. 
 
-In this interactive course, you will explore Python libraries, examine synthetic datasets, and experiment with making your own synthetic datasets for privacy-compliant machine learning and education.
+Throughout this guided experience, you'll learn how synthetic data can be generated, evaluated, and applied—all without writing a single line of code. Whether you're new to the concept or looking to sharpen your skills, this course will walk you through the tools and techniques used by today’s data scientists and privacy engineers.
 
-### Just follow the tabs in the sidebar:
-1. **Synthetic Data Vault Libraries** - Learn about the different systhetic data generation models and when to use each
-2. **Examples of Synthetic Data** – See how each model performs on real datasets
-3. **Try It Yourself!** – Upload your own dataset, generate synthetic versions using multiple libraries, and view the resutling evaluation dashboard
+---
 
-### If you would like to learn more about synthetic data, please watch our tool development video: 
-[Hyperlink to the final capstone presentation]
+### 📚 Course Chapters
+
+#### **Chapter 1: Origins**
+Discover how synthetic data came to be, the problems it solves, and why it’s increasingly essential in modern AI and analytics workflows.
+
+#### **Chapter 2: Models**
+Meet the four core models used to generate synthetic datasets: CTGAN, TVAE, GaussianCopula, and CopulaGAN. Learn what makes each model unique—and when to use them.
+
+#### **Chapter 3: Workflow**
+Follow a simple, structured process to upload your dataset, train generative models, sample synthetic data, and evaluate the results—all within your browser.
+
+#### **Chapter 4: Lab**
+Put your knowledge into practice using our interactive Google Colab lab. Generate your own synthetic datasets and run advanced evaluation metrics with just a few clicks.
+
+---
+
+### If you would like to learn how this tool was developed, please check out the full research project: 
+[COMING SOON: Hyperlink to the final capstone presentation]
 
 
 ❤️ This webapp was designed with love for students, data analysts, professional who want to try synthetic data tools before investing in expensive platforms ❤️
