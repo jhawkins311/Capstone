@@ -60,7 +60,7 @@ Modern tools like MostlyAI, Gretel, and YData generate synthetic records that ha
 
 According to SciForce, as of 2024, over 60% of AI training data is synthetic and that number is expected to grow. 
 
-**By 2030, Synthetic Data is predicted to overshadow real data when training AI models!** 
+By 2030, Synthetic Data is predicted to overshadow real data when training AI models!
 ---
 
 ### 📏 How Do We Know If Synthetic Data Is “Good”?
