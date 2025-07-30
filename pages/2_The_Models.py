@@ -10,16 +10,21 @@ Welcome to **Chapter 2: Models** of the Synthetic Data 101 course!
 
 In this chapter, you'll explore four foundational models from the [Synthetic Data Vault (SDV)](https://docs.sdv.dev/) library. 
 
-These models, referred to as **Synthesizers**, specialize in generating synthetic versions of single-table datasets by learning the structure and relationships within the real data.
-
-Each model has its own strengths, limitations, and ideal use cases. Think of them as different tools in your synthetic data toolbox!
 """)
 
 # Synthesizer Comparison Table
 st.markdown("""
 ---
 
-### 🧰 Comparison Table: SDV Synthesizers
+**Synthesizers** are tools that use machine learning algorithms that:
+1) Learn the patterns and characteristics from real datasets
+3) Ceate new synthetic data that maintains the same statistical relationships and format as the original, while being entirely artificial. 
+
+The Synthetic Data Vault (SDDV) offers a range of synthesizers, each designed with different algorithms and capabilities to suit various data structures and requirement
+
+Each model has its own strengths, limitations, and ideal use cases. Think of them as different tools in your synthetic data toolbox!
+
+### 🧰 A Quick Quick to Different SDV Synthesizers:
 
 | Model              | Type of Data           | Strengths                                           | Limitations                    | Speed                   |
 |--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
