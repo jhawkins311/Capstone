@@ -19,16 +19,16 @@ Throughout this guided experience, you'll learn how synthetic data can be genera
 
 ### 📚 Course Chapters
 
-#### **Chapter 1: Origins**
+#### **Chapter 1: The History**
 Discover how synthetic data came to be, the problems it solves, and why it’s increasingly essential in modern AI and analytics workflows.
 
-#### **Chapter 2: Models**
+#### **Chapter 2: The Models**
 Meet the four core models used to generate synthetic datasets: CTGAN, TVAE, GaussianCopula, and CopulaGAN. Learn what makes each model unique—and when to use them.
 
-#### **Chapter 3: Workflow**
+#### **Chapter 3: The Process**
 Follow a simple, structured process to upload your dataset, train generative models, sample synthetic data, and evaluate the results—all within your browser.
 
-#### **Chapter 4: Lab**
+#### **Chapter 4: The Lab**
 Put your knowledge into practice using our interactive Google Colab lab. Generate your own synthetic datasets and run advanced evaluation metrics with just a few clicks.
 
 ---
