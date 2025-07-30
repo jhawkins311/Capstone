@@ -2,7 +2,7 @@ import streamlit as st
 
 # Page Layout & Title
 st.set_page_config(page_title="Chapter 2: Models", layout="wide")
-st.title("Chapter 2: Models ⚙️")
+st.title("Chapter 2: The Models ⚙️")
 
 # Page Description
 st.markdown("""
