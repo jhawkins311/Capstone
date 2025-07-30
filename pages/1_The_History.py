@@ -10,8 +10,6 @@ Welcome to Chapter 1: Origins of the Synthetic Data 101 course!
 
 In this chapter, you’ll explore the history and motivation behind synthetic data. You’ll learn how it began as a solution to privacy concerns in public datasets—and how it evolved into a key tool for secure, scalable, and ethical data science.
 
-From its early use in government agencies to today’s AI-driven applications, this chapter sets the foundation for why synthetic data matters.
-
 ---
 
 ### 📜 The Origin
