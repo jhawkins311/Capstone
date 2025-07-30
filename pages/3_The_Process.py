@@ -10,6 +10,7 @@ Welcome to Chapter 3: Workflow of the Synthetic Data 101 course!
 
 Now that you’ve learned about the models, it’s time to walk through the complete process of generating synthetic data—from preparing your dataset to evaluating the results.
 
+---
 This chapter walks you through the **entire synthetic data generation lifecycle**, based on the structure of our **Google Colab Lab Notebook**. 
 
 Each tab represents a key stage of the process—from setup to evaluation—accompanied by code snippets and visuals from our example tests on the **Adult Census Income Dataset**.
