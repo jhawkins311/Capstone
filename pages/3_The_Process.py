@@ -149,7 +149,7 @@ quality_score = evaluate_quality(real_data, synthetic_data, metadata)
 st.markdown("""
 ---
 
-### 🧭 Next Up: The Lab
+### 🧪 Next Up: The Lab
 
 Now that you have seen how analysts generate and evaluate synthetic data, now you can try!
 """)
