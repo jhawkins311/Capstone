@@ -1,9 +1,9 @@
 import streamlit as st
 
 #Page Layout & Titles
-st.set_page_config(page_title="SDV Libraries")
+st.set_page_config(page_title="Intro to Synthesizers")
 
-st.title("Synthetic Data Vault Libraries")
+st.title("Introduction to Synthesizers")
 
 # Page Content - SDV Libaries
 st.markdown("""
@@ -24,8 +24,7 @@ Here, you'll explore basic table synthesizers. These models specialize in proces
 ### The main three generative models from the **[Synthetic Data Vault (SDV)](https://docs.sdv.dev/)** library are: 
 
 ### (1) CTGAN
-The CTGAN Synthesizer uses GAN-based methods to learn from real data. 
-GAN refers to Generative Adversarial Network. It's a type of neural network architecture where two networks, a generator and a discriminator, compete to improve each other. 
+The CTGAN Synthesizer uses GAN-based methods to learn from real data. GAN refers to Generative Adversarial Network. It's a type of neural network architecture where two networks, a generator and a discriminator, compete to improve each other. 
 The generator creates new data instances, while the discriminator tries to identify whether the data is real (from the training set) or generated. 
 This adversarial process leads to the generator producing increasingly realistic data. 
 
@@ -36,6 +35,5 @@ The TVAE Synthesizer uses a variational autoencoder (VAE)-based, neural network 
 
 ### (3) GaussianCopula
 The Gaussian Copula Synthesizer uses classic statistiical ML methods to learn from real data. It is fast and produces quality results, but it specializes on numerical-only datasets. 
-
 
 """)
