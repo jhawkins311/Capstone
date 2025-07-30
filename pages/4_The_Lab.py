@@ -17,6 +17,10 @@ This is a **real synthetic data generator and evaluator** built in Google Colab.
 
 You'll upload a dataset, generate synthetic versions using four models, and receive downloadable results and evaluation charts.
 
+If you don’t have a dataset to upload, try exploring open resources like  
+[**Awesome Public Datasets**](https://github.com/awesomedata/awesome-public-datasets) or  
+[**DataCamp’s Dataset Library**](https://www.datacamp.com/datalab/datasets) to get started!
+
 **You can do this.** 💪 No coding experience required—just follow the step-by-step instructions in the notebook.
 
 """)
