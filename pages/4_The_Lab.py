@@ -20,36 +20,25 @@ This is a **real synthetic data generator and evaluator** built in Google Colab.
 """)
 
 # Button to simulate launching the lab
-if st.button("🚀 Launch the Synthetic Data Lab in Google Colab"):
-    st.balloons()
-    st.success("🎉 Congratulations! You’ve completed the course and are ready to explore synthetic data hands-on.")
-
-    st.markdown("""
-    <div style='
-        padding: 1rem;
-        background-color: #e0ffe0;
-        border: 2px dashed #4CAF50;
+st.markdown("""
+<a href="https://colab.research.google.com/drive/1HsV7spMTkvjajdbsrSqu8nIcQfE80ks0?usp=sharing" target="_blank">
+    <button style='
+        padding: 1.25rem 2.5rem;
+        font-size: 1.25rem;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
         border-radius: 12px;
-        text-align: center;
-        font-size: 1.2rem;
-        margin-top: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 1.5rem;
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     '>
-        🏅 <strong>Certified Synthetic Data Explorer</strong><br>
-        You've learned the foundations, explored the tools, and now you're ready to generate privacy-safe, research-ready datasets!
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""
-    <br>
-    👉 [Click here to open the Colab notebook](https://colab.research.google.com/drive/1HsV7spMTkvjajdbsrSqu8nIcQfE80ks0?usp=sharing)
-    """, unsafe_allow_html=True)
-else:
-    st.markdown("""
-    <a href="https://colab.research.google.com/drive/1HsV7spMTkvjajdbsrSqu8nIcQfE80ks0?usp=sharing" target="_blank">
-        <button style='padding: 1rem 2rem; font-size: 1.25rem; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;'>
-            🚀 Open the Synthetic Data Generator in Google Colab
-        </button>
-    </a>
-    """, unsafe_allow_html=True)
-
-
+        🚀 Open the Synthetic Data Generator in Google Colab
+    </button>
+</a>
+""", unsafe_allow_html=True)
