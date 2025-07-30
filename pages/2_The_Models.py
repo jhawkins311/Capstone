@@ -29,18 +29,23 @@ st.markdown("""
 | **CopulaGAN**      | Numerical, Categorical | Combines GANs with statistical copulas for balance  | Newer model, fewer benchmarks   | ⚡ Fast                 |
 """)
 
-# --- CTGAN Section ---
-st.markdown("""
----
+# Tabs for each model
+ctgan_tab, tvae_tab, gc_tab, copulagan_tab = st.tabs(["🧪 CTGAN", "🔄 TVAE", "📈 GaussianCopula", "🧬 CopulaGAN"])
 
-### 🧪 CTGAN — Conditional GAN for Tabular Data
-The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality. It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data). CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
+# --- CTGAN Tab ---
+with ctgan_tab:
+    st.subheader("🧪 CTGAN — Conditional GAN for Tabular Data")
 
-> Best for: High-stakes, highly structured datasets where accuracy matters most.
+    st.markdown("""
+The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality.  
+It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data).  
+CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
+
+> **Best for:** High-stakes, highly structured datasets where accuracy matters most.
 """)
 
-with st.expander("🧠 Show CTGAN Example Code"):
-    st.code("""
+    with st.expander("🧠 Show CTGAN Example Code"):
+        st.code("""
 from sdv.single_table import CTGANSynthesizer
 
 synthesizer = CTGANSynthesizer(
@@ -51,21 +56,21 @@ synthesizer = CTGANSynthesizer(
 )
 synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
-    """, language="python")
+        """, language="python")
 
+# --- TVAE Tab ---
+with tvae_tab:
+    st.subheader("🔄 TVAE — Tabular Variational Autoencoder")
 
-# --- TVAE Section ---
-st.markdown("""
----
+    st.markdown("""
+The **TVAE Synthesizer** relies on **variational autoencoders** (VAEs), which compress and reconstruct the dataset to learn its structure.  
+This makes it great for capturing **non-linear patterns** in data—like complex interactions between features.
 
-### 🔄 TVAE — Tabular Variational Autoencoder
-The **TVAE Synthesizer** relies on **variational autoencoders** (VAEs), which compress and reconstruct the dataset to learn its structure. This makes it great for capturing **non-linear patterns** in data—like complex interactions between features.
-
-> Best for: Mid-size datasets where relationships between variables are important.
+> **Best for:** Mid-size datasets where relationships between variables are important.
 """)
 
-with st.expander("🧠 Show TVAE Example Code"):
-    st.code("""
+    with st.expander("🧠 Show TVAE Example Code"):
+        st.code("""
 from sdv.single_table import TVAESynthesizer
 
 synthesizer = TVAESynthesizer(
@@ -76,41 +81,42 @@ synthesizer = TVAESynthesizer(
 )
 synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
-    """, language="python")
+        """, language="python")
 
+# --- GaussianCopula Tab ---
+with gc_tab:
+    st.subheader("📈 GaussianCopula — Classic but Powerful")
 
-# --- GaussianCopula Section ---
-st.markdown("""
----
+    st.markdown("""
+The **GaussianCopula Synthesizer** is the simplest of the four.  
+It uses classic statistical transformations to model relationships, assuming a multivariate normal structure.  
+While limited to mostly numerical data, it’s **very fast** and **easy to use**, making it ideal for prototyping or educational use.
 
-### 📈 GaussianCopula — Classic but Powerful
-The **GaussianCopula Synthesizer** is the simplest of the four. It uses classic statistical transformations to model relationships, assuming a multivariate normal structure. While limited to mostly numerical data, it’s **very fast** and **easy to use**, making it ideal for prototyping or educational use.
-
-> Best for: Quick generation of synthetic data when speed or simplicity is a priority.
+> **Best for:** Quick generation of synthetic data when speed or simplicity is a priority.
 """)
 
-with st.expander("🧠 Show GaussianCopula Example Code"):
-    st.code("""
+    with st.expander("🧠 Show GaussianCopula Example Code"):
+        st.code("""
 from sdv.single_table import GaussianCopulaSynthesizer
 
 synthesizer = GaussianCopulaSynthesizer(metadata)
 synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
-    """, language="python")
+        """, language="python")
 
+# --- CopulaGAN Tab ---
+with copulagan_tab:
+    st.subheader("🧬 CopulaGAN — Hybrid Approach")
 
-# --- CopulaGAN Section ---
-st.markdown("""
----
+    st.markdown("""
+The **CopulaGAN Synthesizer** is a **hybrid model** that blends GANs with statistical copulas.  
+It offers a middle ground between deep learning complexity and traditional modeling, aiming to balance **accuracy**, **privacy**, and **speed**.
 
-### 🧬 CopulaGAN — Hybrid Approach
-The **CopulaGAN Synthesizer** is a **hybrid model** that blends GANs with statistical copulas. It offers a middle ground between deep learning complexity and traditional modeling, aiming to balance **accuracy**, **privacy**, and **speed**.
-
-> Best for: Scenarios that demand both performance and speed, such as limited-resource environments or pilot testing.
+> **Best for:** Scenarios that demand both performance and speed, such as limited-resource environments or pilot testing.
 """)
 
-with st.expander("🧠 Show CopulaGAN Example Code"):
-    st.code("""
+    with st.expander("🧠 Show CopulaGAN Example Code"):
+        st.code("""
 from sdv.single_table import CopulaGANSynthesizer
 
 synthesizer = CopulaGANSynthesizer(
@@ -121,7 +127,7 @@ synthesizer = CopulaGANSynthesizer(
 )
 synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
-    """, language="python")
+        """, language="python")
 
 
 # Final Navigation Tip
