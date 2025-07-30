@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page title
-st.title("Chapter 1: Origins")
+st.title("Chapter 1: The History")
 
 # Introduction
 st.markdown("""
