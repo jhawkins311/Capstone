@@ -31,7 +31,7 @@ st.markdown("""
 
 # --- CTGAN Section ---
 st.markdown("""
----
+
 
 ### 🧪 CTGAN — Conditional GAN for Tabular Data
 The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality. It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data). CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
@@ -55,7 +55,6 @@ synthetic_data = synthesizer.sample(num_rows=1000)
 
 # --- TVAE Section ---
 st.markdown("""
----
 
 ### 🔄 TVAE — Tabular Variational Autoencoder
 The **TVAE Synthesizer** relies on **variational autoencoders** (VAEs), which compress and reconstruct the dataset to learn its structure. This makes it great for capturing **non-linear patterns** in data—like complex interactions between features.
@@ -79,7 +78,6 @@ synthetic_data = synthesizer.sample(num_rows=1000)
 
 # --- GaussianCopula Section ---
 st.markdown("""
----
 
 ### 📈 GaussianCopula — Classic but Powerful
 The **GaussianCopula Synthesizer** is the simplest of the four. It uses classic statistical transformations to model relationships, assuming a multivariate normal structure. While limited to mostly numerical data, it’s **very fast** and **easy to use**, making it ideal for prototyping or educational use.
@@ -98,7 +96,6 @@ synthetic_data = synthesizer.sample(num_rows=1000)
 
 # --- CopulaGAN Section ---
 st.markdown("""
----
 
 ### 🧬 CopulaGAN — Hybrid Approach
 The **CopulaGAN Synthesizer** is a **hybrid model** that blends GANs with statistical copulas. It offers a middle ground between deep learning complexity and traditional modeling, aiming to balance **accuracy**, **privacy**, and **speed**.
