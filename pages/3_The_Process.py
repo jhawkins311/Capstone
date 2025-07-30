@@ -14,9 +14,9 @@ This chapter walks you through the **entire synthetic data generation lifecycle*
 
 ### The Lifecycle of Synthetic Data
 
-Now that you’ve learned about the models, it’s time to walk through the complete process of generating synthetic data—from preparing your dataset to evaluating the results.
+Now that you’ve learned about the models, it’s time to walk through the complete process of generating synthetic data.
 
-Each tab represents a key stage of the process—from setup to evaluation—accompanied by code snippets and visuals from our example tests on the **Adult Census Income Dataset**.
+Each tab represents a key stage of the process—from data preparation to results evaluation. Follow the visuals and code snippets from our example tests on the **Adult Census Dataset**.
 
 > ⚠️ *This page is a walkthrough only. For real execution, please visit the Lab in Chapter 4.*
 """)
