@@ -5,9 +5,24 @@ st.title("Chapter 1: The History")
 
 # Introduction
 st.markdown("""
+
+Welcome to Chapter 1: Origins of the Synthetic Data 101 course!
+
+In this chapter, you’ll explore the history and motivation behind synthetic data. You’ll learn how it began as a solution to privacy concerns in public datasets—and how it evolved into a key tool for secure, scalable, and ethical data science.
+
+From its early use in government agencies to today’s AI-driven applications, this chapter sets the foundation for why synthetic data matters.
+
+---
+
+### 📜 The Origin
 Synthetic data may seem like a cutting-edge innovation, but its origins stretch back over 30 years.
 
-In 1993, the U.S. Census Bureau faced a dilemma: how could it share detailed individual survey responses for research and policy purposes **without revealing private identities**? The answer came from statistician Donald Rubin, who proposed using **statistical models** to generate synthetic data that mirrored the real dataset—without including any actual records. His approach protected privacy while enabling public access, and it laid the foundation for today’s synthetic data movement.
+In 1993, the U.S. Census Bureau faced a dilemma: how could it share detailed individual survey responses for research and policy purposes **without revealing private identities**? 
+
+The answer came from statistician Donald Rubin, who proposed using **statistical models** to generate synthetic data that mirrored the real dataset—without including any actual records. 
+His approach protected privacy while enabling public access. 
+
+This laid the foundation for today’s synthetic data movement.
 
 ---
 
