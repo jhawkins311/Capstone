@@ -1,127 +1,137 @@
 import streamlit as st
 
-# Page Config
-st.set_page_config(page_title="Chapter 3: Workflow", layout="wide")
+# Page Configuration
+st.set_page_config(page_title="Chapter 3: The Process", layout="wide")
 st.title("Chapter 3: The Process")
 
+# Intro Text
 st.markdown("""
-In this chapter, you'll walk through the full synthetic data lifecycle—from preparing your data to generating and evaluating your synthetic dataset.
+This chapter walks you through the **entire synthetic data generation lifecycle**, based on the structure of our **Google Colab Lab Notebook**.
 
-Each tab below reflects a step in the workflow, based on our Google Colab interface and aligned with the SDV Library structure. All visuals and examples use the **Adult Census Income Dataset**.
+Each tab represents a key stage of the process—from setup to evaluation—accompanied by code snippets and visuals from our example tests on the **Adult Census Income Dataset**.
+
+> ⚠️ *This page is a walkthrough only. For real execution, please visit the Lab in Chapter 4.*
 """)
 
-# Tabs
-tab1, tab2, tab3, tab4 = st.tabs(["📂 Data Preparation", "🔧 Training", "🧪 Generating", "📊 Evaluating"])
+# Tabs based on notebook phases
+tab1, tab2, tab3, tab4 = st.tabs([
+    "📂 Data Preparation",
+    "⚙️ Training",
+    "🧪 Generating",
+    "📊 Evaluating"
+])
 
-# --------------------------
-# 📂 Data Preparation
-# --------------------------
+# ---------------------------------------
+# Tab 1: Data Preparation
+# ---------------------------------------
 with tab1:
     st.header("📂 Data Preparation")
 
-    st.subheader("Install Dependencies & Import Libraries")
     st.markdown("""
-Install all required Python packages and import libraries such as `pandas`, `sdv`, and `sdmetrics` to begin building the synthetic data system.
-""")
+Before training a synthesizer, you'll need to load your data and generate its metadata.
+
+### Steps in the Lab Notebook:
+1. **Install Dependencies** – Required Python packages (SDV, Pandas, Plotly, etc.)
+2. **Import Libraries** – Essential modules and functions
+3. **Upload File** – Upload a `.csv` file using the notebook’s interface
+4. **Create Metadata** – Automatically detect column types using SDV
+
+### Example Code:
+    """)
     st.code("""
-!pip install sdv sdmetrics plotly openpyxl XlsxWriter
-import pandas as pd
 from sdv.metadata import SingleTableMetadata
-    """)
 
-    st.subheader("Upload File")
-    st.markdown("Upload your original dataset using an upload widget or Colab file selector.")
-
-    st.code("""
-from google.colab import files
-uploaded = files.upload()
-real_data = pd.read_csv("your_file.csv")
-    """)
-
-    st.subheader("Create Metadata")
-    st.markdown("""
-Metadata tells the synthesizer how to interpret each column. You can detect metadata automatically and visualize it.
-""")
-    st.code("""
 metadata = SingleTableMetadata()
 metadata.detect_from_dataframe(data=real_data)
 metadata.visualize()
     """, language="python")
 
-    st.image("89d973c5-70bf-4c68-82e8-327bbc5a8106.png", caption="Example: Auto-detected metadata for Adult dataset", use_column_width=True)
+    st.image("https://raw.githubusercontent.com/your-username/your-repo/main/images/metadata_preview.png", 
+             caption="Metadata detected from Adult dataset", 
+             use_column_width=True)
 
-# --------------------------
-# 🔧 Training
-# --------------------------
+# ---------------------------------------
+# Tab 2: Training
+# ---------------------------------------
 with tab2:
-    st.header("🔧 Training")
+    st.header("⚙️ Training")
 
     st.markdown("""
-Once metadata is created, you can initialize and train your synthesizer model (e.g., CTGAN, TVAE).
+Once the metadata is prepared, you'll train four synthesizer models on your dataset:
+- CTGAN
+- TVAE
+- GaussianCopula
+- CopulaGAN
 
-The Colab notebook defaults to **10 epochs** for fast experimentation.
-""")
+The notebook uses 10 training epochs per model for speed and comparison.
 
+### Example: TVAE Model
+    """)
     st.code("""
 from sdv.single_table import TVAESynthesizer
-synthesizer = TVAESynthesizer(metadata)
-synthesizer.fit(real_data, epochs=10)
+
+synthesizer = TVAESynthesizer(
+    metadata=metadata,
+    enforce_rounding=False,
+    epochs=10,
+    verbose=True
+)
+
+synthesizer.fit(real_data)
     """, language="python")
 
-    st.image("path_to_model_loss_plot.png", caption="TVAE Loss curve after 10 epochs", use_column_width=True)
+    st.image("https://raw.githubusercontent.com/your-username/your-repo/main/images/loss_plot_tvae.png", 
+             caption="Training loss plot for TVAE on Adult dataset", 
+             use_column_width=True)
 
-# --------------------------
-# 🧪 Generating
-# --------------------------
+# ---------------------------------------
+# Tab 3: Generating
+# ---------------------------------------
 with tab3:
     st.header("🧪 Generating")
 
-    st.subheader("Input Sampling Details")
-    st.markdown("Specify how many rows of synthetic data you want to generate.")
+    st.markdown("""
+After training, you’ll generate synthetic data using each model. You’ll also be prompted to enter how many rows to sample.
 
+The results are saved into an Excel file with **separate tabs for each model’s output**.
+
+### Sampling Code Example:
+    """)
     st.code("""
 synthetic_data = synthesizer.sample(num_rows=1000)
     """, language="python")
 
-    st.subheader("Download Synthetic Datasets (Excel File)")
-    st.markdown("Export the generated datasets using `ExcelWriter` with one tab per model.")
-    st.code("""
-with pd.ExcelWriter('synthetic_output.xlsx', engine='xlsxwriter') as writer:
-    synthetic_data.to_excel(writer, sheet_name='TVAE', index=False)
-files.download('synthetic_output.xlsx')
-    """)
+    st.image("https://raw.githubusercontent.com/your-username/your-repo/main/images/sample_distribution.png", 
+             caption="Real vs Synthetic distributions on Adult dataset", 
+             use_column_width=True)
 
-    st.image("path_to_scatter_plot_or_distribution.png", caption="Real vs Synthetic Feature Distributions", use_column_width=True)
-
-# --------------------------
-# 📊 Evaluating
-# --------------------------
+# ---------------------------------------
+# Tab 4: Evaluating
+# ---------------------------------------
 with tab4:
     st.header("📊 Evaluating")
 
-    st.subheader("8a. Generate Evaluation Scores (Latest SDV/SDMetrics)")
-
     st.markdown("""
-We evaluate synthetic data on three key dimensions:
-- **Quality**: How well does synthetic data mimic the original?
-- **Utility**: Can synthetic data be used to train downstream models?
-- **Privacy**: Does the synthetic data leak personal or sensitive information?
-""")
+The final step is to evaluate the synthetic datasets based on:
+- **Quality** – Distribution similarity
+- **Utility** – Model compatibility
+- **Privacy** – Disclosure and overfitting risk
 
+The Lab generates both a summary table and an interactive dashboard.
+
+### Example Evaluation Code:
+    """)
     st.code("""
-from sdv.evaluation.single_table import run_diagnostic, evaluate_quality
+from sdv.evaluation.single_table import evaluate_quality, run_diagnostic
 
 diagnostic = run_diagnostic(real_data, synthetic_data, metadata)
 quality_score = evaluate_quality(real_data, synthetic_data, metadata)
-    """)
+    """, language="python")
 
-    st.image("path_to_quality_bar_chart.png", caption="Evaluation Scores (Quality & Trends)", use_column_width=True)
+    st.image("https://raw.githubusercontent.com/your-username/your-repo/main/images/eval_scores.png", 
+             caption="Evaluation results showing quality and trend scores", 
+             use_column_width=True)
 
-    st.subheader("8b. Generate Evaluation Dashboard")
     st.markdown("""
-Use an interactive dashboard to compare feature distributions, privacy risk, and utility across multiple synthesizers.
+👉 Full column-level visualizations and privacy reports are available inside the Lab in **Chapter 4**.
 """)
-    st.code("""
-# Dashboard code runs in Google Colab using Dash or Streamlit — see full dashboard module for details.
-    """)
-
