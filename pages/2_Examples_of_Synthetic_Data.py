@@ -3,7 +3,7 @@ from PIL import Image
 
 st.title("Example: Adult Dataset Results")
 
-tabs = st.tabs(["Uploading", "Modeling", "Generating", "Evaluating"])
+tabs = st.tabs(["Loading", "Modeling", "Generating", "Evaluating"])
 
 with tabs[0]:
     st.header("Uploading an Original Dataset")
