@@ -8,9 +8,8 @@ st.title("Chapter 4: The Lab")
 st.markdown("""
 Welcome to the final chapter of **Synthetic Data 101**! 🎓
 
-You've explored the models, workflow, and best practices for working with synthetic data. Now it's time to put that knowledge into action.
+You've explored the models, workflow, and best practices for working with synthetic data. Now it's time to put that knowledge into action!
 
----
 
 ### 🧪 Launch the Lab
 
@@ -18,7 +17,6 @@ This is a **real synthetic data generator and evaluator** built in Google Colab.
 
 **You can do this.** 💪 No coding experience required—just follow the step-by-step instructions in the notebook.
 
----
 """)
 
 # Button to simulate launching the lab
@@ -54,14 +52,4 @@ else:
     </a>
     """, unsafe_allow_html=True)
 
-# Final encouragement
-st.markdown("""
----
-
-### 💡 You Did It!
-
-You're now equipped to use synthetic data responsibly in real-world scenarios. From privacy protection to machine learning, the skills you’ve gained will help you explore data in bold new ways.
-
-🧠 Curious minds build better tools. Thank you for taking this journey!
-""")
 
