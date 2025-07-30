@@ -32,11 +32,6 @@ st.markdown("""
         font-weight: bold;
         cursor: pointer;
         margin-top: 1.5rem;
-        width: 100%;
-        max-width: 600px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     '>
         🚀 Open the Synthetic Data Generator in Google Colab
     </button>
