@@ -20,7 +20,8 @@ st.markdown("""
 1) Learn the patterns and characteristics from real datasets
 3) Ceate new synthetic data that maintains the same statistical relationships and format as the original, while being entirely artificial. 
 
-The Synthetic Data Vault (SDDV) offers a range of synthesizers. Each mdoel is designed with own strengths, limitations, and ideal use cases.
+
+The Synthetic Data Vault (SDV) offers a range of synthesizers. Each mdoel is designed with own strengths, limitations, and ideal use cases.
 
 ### 🧰 A Quick Quick to Different SDV Synthesizers:
 
