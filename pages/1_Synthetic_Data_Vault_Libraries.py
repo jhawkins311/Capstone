@@ -21,7 +21,7 @@ Here, you'll explore basic table synthesizers. These models specialize in proces
 | **GaussianCopula** | Mostly Numerical       | Fast & easy to use                                  | Uses statistical estimates     | Fast                    |    
 
 
-The main three generative models from the **[Synthetic Data Vault (SDV)](https://docs.sdv.dev/)** library are: 
+### The main three generative models from the **[Synthetic Data Vault (SDV)](https://docs.sdv.dev/)** library are: 
 
 ### (1) CTGAN
 The CTGAN Synthesizer uses GAN-based methods to learn from real data. 
