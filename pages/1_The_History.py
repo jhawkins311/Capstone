@@ -51,7 +51,7 @@ Modern tools like **MostlyAI**, **Gretel**, and **YData** generate synthetic rec
 
 Synthetic datasets are evaluated based on three core criteria:
 
-1. **Quality** – How well does the synthetic data reflect the patterns and relationships in the original?
+1. **Accuracy** – How well does the synthetic data reflect the patterns and relationships in the original?
 2. **Utility** – Can machine learning models trained on the synthetic data produce accurate results?
 3. **Privacy** – How unlikely is it that anyone could re-identify individuals from the synthetic dataset?
 
