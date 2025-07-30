@@ -63,6 +63,3 @@ A 2025 study by JP Morgan showed that high-quality synthetic data could power fr
 
 Now that you understand the origin story and purpose of synthetic data, let’s explore the **four foundational models** that generate it.
 """)
-
-# Optional: Display Slide
-st.image("17dc8ca6-4623-4f29-8233-c07d85c199c9.png", caption="Why Synthetic Data? Source: Capstone Presentation", use_column_width=True)
