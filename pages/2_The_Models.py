@@ -8,7 +8,9 @@ st.title("Chapter 2: Models")
 st.markdown("""
 Welcome to **Chapter 2: Models** of the Synthetic Data 101 course!
 
-In this chapter, you'll explore four foundational models from the [Synthetic Data Vault (SDV)](https://docs.sdv.dev/) library. These models specialize in generating **synthetic versions of single-table datasets** by learning the structure and relationships within the real data.
+In this chapter, you'll explore four foundational models from the [Synthetic Data Vault (SDV)](https://docs.sdv.dev/) library. 
+
+These models, referred to as **Synthesizers**, specialize in generating synthetic versions of single-table datasets by learning the structure and relationships within the real data.
 
 Each model has its own strengths, limitations, and ideal use cases. Think of them as different tools in your synthetic data toolbox!
 """)
