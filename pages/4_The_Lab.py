@@ -2,7 +2,7 @@ import streamlit as st
 
 # Page setup
 st.set_page_config(page_title="Chapter 4: The Lab", layout="wide")
-st.title("Chapter 4: The Lab")
+st.title("Chapter 4: The Lab 🧪")
 
 # Description
 st.markdown("""
