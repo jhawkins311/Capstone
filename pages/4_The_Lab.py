@@ -13,7 +13,9 @@ You've explored the models, workflow, and best practices for working with synthe
 
 ### 🧪 Launch the Lab
 
-This is a **real synthetic data generator and evaluator** built in Google Colab. No installation needed. You'll upload a dataset, generate synthetic versions using four models, and receive downloadable results and evaluation charts.
+This is a **real synthetic data generator and evaluator** built in Google Colab. No installation needed. 
+
+You'll upload a dataset, generate synthetic versions using four models, and receive downloadable results and evaluation charts.
 
 **You can do this.** 💪 No coding experience required—just follow the step-by-step instructions in the notebook.
 
