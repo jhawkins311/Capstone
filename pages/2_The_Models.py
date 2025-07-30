@@ -31,7 +31,7 @@ st.markdown("""
 
 # --- CTGAN Section ---
 st.markdown("""
-
+---
 
 ### 🧪 CTGAN — Conditional GAN for Tabular Data
 The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality. It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data). CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
