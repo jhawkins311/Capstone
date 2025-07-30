@@ -6,7 +6,7 @@ import streamlit as st
 # Page Configuration & Titles
 st.set_page_config(page_title="Synthetic Data 101", layout="wide")
 
-st.title("A Beginner's Guide to Synthetic Data")
+st.title("Synthetic Data 101")
 
 # Text for Homepage - Explains the "course" structure" 
 st.markdown("""
