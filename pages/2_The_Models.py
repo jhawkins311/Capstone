@@ -27,6 +27,8 @@ st.markdown("""
 | **TVAE**           | Numerical, Categorical | Captures non-linear patterns well                   | Higher resource demand          | ⚖️ Medium              |
 | **GaussianCopula** | Mostly Numerical       | Fast, easy to use                                   | Struggles with complex/mixed data | ⚡ Fast             |
 | **CopulaGAN**      | Numerical, Categorical | Combines GANs with statistical copulas for balance  | Newer model, fewer benchmarks   | ⚡ Fast                 |
+
+---
 """)
 
 # Tabs for each model
