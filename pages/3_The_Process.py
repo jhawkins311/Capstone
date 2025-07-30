@@ -143,3 +143,13 @@ quality_score = evaluate_quality(real_data, synthetic_data, metadata)
     st.markdown("""
 👉 Full column-level visualizations and privacy reports are available inside the Lab in **Chapter 4**.
 """)
+
+
+# Final Navigation Tip
+st.markdown("""
+---
+
+### 🧭 Next Up: The Lab
+
+Now that you have seen how analysts generate and evaluate synthetic data, now you can try!
+""")
