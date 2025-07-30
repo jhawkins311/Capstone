@@ -11,8 +11,13 @@ Welcome to Chapter 1: Origins of the Synthetic Data 101 course!
 In this chapter, you’ll explore the history and motivation behind synthetic data. You’ll learn how it began as a solution to privacy concerns in public datasets—and how it evolved into a key tool for secure, scalable, and ethical data science.
 
 ---
+### 🧠 What is Synthetic Data?
 
+Synthetic data refers to artificially generated datasets that **mimic real-world data** in structure and behavior while **avoiding any privacy risks**!
+
+---
 ### 📜 The Origin
+
 Synthetic data may seem like a cutting-edge innovation, but its origins stretch back over 30 years.
 
 In 1993, the U.S. Census Bureau faced a dilemma: how could it share detailed individual survey responses for research and policy purposes **without revealing private identities**? 
@@ -22,9 +27,15 @@ His approach protected privacy while enabling public access.
 
 This laid the foundation for today’s synthetic data movement.
 
----
+Modern tools like MostlyAI, Gretel, and YData generate synthetic records that have been used to:
+- Diagnose medical conditions faster  
+- Test financial systems under stress  
+- Train autonomous vehicles without physical crashes
 
-### 📉 The Two Major Roadblocks
+---
+### 📉 The Rise and Plateau of AI
+
+Artificial intelligence has the key to solving the world’s most complex problems (Nadella, Harroch, 2025). 
 
 As the demand for data grew, two major challenges began to limit access to useful datasets:
 
@@ -47,28 +58,17 @@ To overcome these challenges, researchers and organizations adopted a new set of
 - Simplifying – Using simpler models to create smaller, safe datasets  
 - **Generating – Creating new datasets that mimic the original, but pose no privacy risk**
 
----
-
-### 🧠 What is Synthetic Data?
-
-Synthetic data refers to artificially generated datasets that **mimic real-world data** in structure and behavior while **avoiding any privacy risks**!
-
-Modern tools like MostlyAI, Gretel, and YData generate synthetic records that have been used to:
-- Diagnose medical conditions faster  
-- Test financial systems under stress  
-- Train autonomous vehicles without physical crashes
-
-According to SciForce, as of 2024, over 60% of AI training data is synthetic and that number is expected to grow. 
+Generating appeared to be the best solution. In fact, as of 2024, over 60% of AI training data is synthetic and that number is expected to grow. 
 
 By 2030, Synthetic Data is predicted to overshadow real data when training AI models!
 
----
+----
 
-### 📏 How Do We Know If Synthetic Data Is “Good”?
+### 📏 A New Problem
 
-This leads to the main question: How can we evaluate and compare synthetic data generation tools to ensure synthetic datasets are accurate, useful, and safe for machine learning?
+As synthetic data becomes more common, a critical question arises: How can we know if the Synthetic Data is “Good”?
 
-This site will walk you through the full process of generating and evaluating synthetic datasets using modern tools and best practices. 
+This tutorial will walk you through the full process of generating and evaluating synthetic datasets using modern tools and best practices. 
 
 Our goal is to help you determine whether synthetic data is trustrworthy by using the three pillars: 
 
