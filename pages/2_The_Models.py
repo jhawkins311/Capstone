@@ -33,6 +33,9 @@ The Synthetic Data Vault (SDV) offers a range of synthesizers. Each mdoel is des
 | **CopulaGAN**      | Numerical, Categorical | Combines GANs with statistical copulas for balance  | Newer model, fewer benchmarks   | ⚡ Fast                 |
 
 ---
+
+### Basic Single Table Synthesizers
+
 """)
 
 # Tabs for each model
