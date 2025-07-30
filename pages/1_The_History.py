@@ -72,7 +72,7 @@ A 2025 study by JP Morgan showed that high-quality synthetic data could power fr
 
 ---
 
-### ⚙️ Next Up: The Models
+### Next Up: The Models ⚙️
 
 Now that you understand the origin story and purpose of synthetic data, let’s explore the **four foundational models** that generate it.
 """)
