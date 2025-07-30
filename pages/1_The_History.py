@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page title
-st.title("Chapter 1: The History")
+st.title("Chapter 1: The History 🏛️")
 
 # Introduction
 st.markdown("""
@@ -42,33 +42,40 @@ These roadblocks persist today—especially in regulated industries like **healt
 
 To overcome these challenges, researchers and organizations adopted a new set of strategies:
 
-- **Collaborating** – Partnering with data owners to access secure datasets  
-- **Cleaning** – Preparing datasets to be usable for AI and modeling  
-- **Simplifying** – Using simpler models to create smaller, safe datasets  
-- **Generating** – Creating new datasets that mimic the original, but pose no privacy risk
+- Collaborating – Partnering with data owners to access secure datasets  
+- Cleaning – Preparing datasets to be usable for AI and modeling  
+- Simplifying – Using simpler models to create smaller, safe datasets  
+- **Generating – Creating new datasets that mimic the original, but pose no privacy risk**
 
 ---
 
-### 🧠 Enter: Synthetic Data
+### 🧠 What is Synthetic Data?
 
-> Synthetic data refers to **artificially generated datasets** that mimic real-world data in **structure and behavior**—while **avoiding any privacy risks**.
+Synthetic data refers to artificially generated datasets that **mimic real-world data** in structure and behavior while **avoiding any privacy risks**!
 
-Modern tools like **MostlyAI**, **Gretel**, and **YData** generate synthetic records that can be used to:
+Modern tools like MostlyAI, Gretel, and YData generate synthetic records that have been used to:
 - Diagnose medical conditions faster  
 - Test financial systems under stress  
 - Train autonomous vehicles without physical crashes
 
+According to SciForce, as of 2024, over 60% of AI training data is synthetic and that number is expected to grow. 
+
+**By 2030, Synthetic Data is predicted to overshadow real data when training AI models!** 
 ---
 
-### 📏 How Do We Evaluate Synthetic Data?
+### 📏 How Do We Know If Synthetic Data Is “Good”?
 
-Synthetic datasets are evaluated based on three core criteria:
+This leads to the main question: How can we evaluate and compare synthetic data generation tools to ensure synthetic datasets are accurate, useful, and safe for machine learning?
+
+This site will walk you through the full process of generating and evaluating synthetic datasets using modern tools and best practices. 
+
+Our goal is to help you determine whether synthetic data is trustrworthy by using the three pillars: 
 
 1. **Accuracy** – How well does the synthetic data reflect the patterns and relationships in the original?
 2. **Utility** – Can machine learning models trained on the synthetic data produce accurate results?
 3. **Privacy** – How unlikely is it that anyone could re-identify individuals from the synthetic dataset?
 
-A 2025 study by JP Morgan showed that high-quality synthetic data could power fraud detection models—**without violating privacy regulations**.
+
 
 ---
 
