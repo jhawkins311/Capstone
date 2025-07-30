@@ -53,6 +53,7 @@ synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
     """, language="python")
 
+
 # --- TVAE Section ---
 st.markdown("""
 
@@ -76,6 +77,7 @@ synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
     """, language="python")
 
+
 # --- GaussianCopula Section ---
 st.markdown("""
 
@@ -93,6 +95,7 @@ synthesizer = GaussianCopulaSynthesizer(metadata)
 synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
     """, language="python")
+
 
 # --- CopulaGAN Section ---
 st.markdown("""
@@ -116,6 +119,7 @@ synthesizer = CopulaGANSynthesizer(
 synthesizer.fit(real_data)
 synthetic_data = synthesizer.sample(num_rows=1000)
     """, language="python")
+
 
 # Final Navigation Tip
 st.markdown("""
