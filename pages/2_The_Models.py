@@ -45,7 +45,7 @@ from sdv.single_table import CTGANSynthesizer
 synthesizer = CTGANSynthesizer(
     metadata,           # required
     enforce_rounding=False,
-    epochs=500,
+    epochs=00,
     verbose=True
 )
 synthesizer.fit(real_data)
