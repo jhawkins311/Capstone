@@ -2,7 +2,7 @@ import streamlit as st
 
 # Page Configuration
 st.set_page_config(page_title="Chapter 3: The Process", layout="wide")
-st.title("Chapter 3: The Process")
+st.title("Chapter 3: The Process 🧭")
 
 # Intro Text
 st.markdown("""
@@ -149,7 +149,7 @@ quality_score = evaluate_quality(real_data, synthetic_data, metadata)
 st.markdown("""
 ---
 
-### 🧪 Next Up: The Lab
+### Next Up: The Lab 🧪
 
 Now that you have seen how analysts generate and evaluate synthetic data, now you can try!
 """)
