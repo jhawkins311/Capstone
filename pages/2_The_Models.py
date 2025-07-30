@@ -20,9 +20,7 @@ st.markdown("""
 1) Learn the patterns and characteristics from real datasets
 3) Ceate new synthetic data that maintains the same statistical relationships and format as the original, while being entirely artificial. 
 
-The Synthetic Data Vault (SDDV) offers a range of synthesizers, each designed with different algorithms and capabilities to suit various data structures and requirement
-
-Each model has its own strengths, limitations, and ideal use cases. Think of them as different tools in your synthetic data toolbox!
+The Synthetic Data Vault (SDDV) offers a range of synthesizers. Each mdoel is designed with own strengths, limitations, and ideal use cases.
 
 ### 🧰 A Quick Quick to Different SDV Synthesizers:
 
@@ -32,7 +30,6 @@ Each model has its own strengths, limitations, and ideal use cases. Think of the
 | **TVAE**           | Numerical, Categorical | Captures non-linear patterns well                   | Higher resource demand          | ⚖️ Medium              |
 | **GaussianCopula** | Mostly Numerical       | Fast, easy to use                                   | Struggles with complex/mixed data | ⚡ Fast             |
 | **CopulaGAN**      | Numerical, Categorical | Combines GANs with statistical copulas for balance  | Newer model, fewer benchmarks   | ⚡ Fast                 |
-
 
 ---
 """)
