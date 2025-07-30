@@ -16,19 +16,6 @@ In this chapter, you'll explore four foundational models from the [Synthetic Dat
 st.markdown("""
 ---
 
-The Synthetic Data Vault (SDV) offers a range of synthesizers. Each mdoel is designed with own strengths, limitations, and ideal use cases.
-
-### 🧰 A Quick Quick to Different SDV Synthesizers:
-
-| Model              | Type of Data           | Strengths                                           | Limitations                    | Speed                   |
-|--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
-| **CTGAN**          | Numerical, Categorical | High quality on complex, imbalanced data            | Requires tuning                | ⏳ Slow                 |
-| **TVAE**           | Numerical, Categorical | Captures non-linear patterns well                   | Higher resource demand          | ⚖️ Medium              |
-| **GaussianCopula** | Mostly Numerical       | Fast, easy to use                                   | Struggles with complex/mixed data | ⚡ Fast             |
-| **CopulaGAN**      | Numerical, Categorical | Combines GANs with statistical copulas for balance  | Newer model, fewer benchmarks   | ⚡ Fast                 |
-
----
-
 ### Basic Single Table Synthesizers
 
 **Synthesizers** are tools that use machine learning algorithms that:
@@ -137,11 +124,30 @@ synthetic_data = synthesizer.sample(num_rows=1000)
         """, language="python")
 
 
+
+# Synthesizer Comparison Table
+st.markdown("""
+---
+
+The Synthetic Data Vault (SDV) offers a range of synthesizers. Each mdoel is designed with own strengths, limitations, and ideal use cases.
+
+### 🧰 A Quick Quick to Different SDV Synthesizers:
+
+| Model              | Type of Data           | Strengths                                           | Limitations                    | Speed                   |
+|--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
+| **CTGAN**          | Numerical, Categorical | High quality on complex, imbalanced data            | Requires tuning                | ⏳ Slow                 |
+| **TVAE**           | Numerical, Categorical | Captures non-linear patterns well                   | Higher resource demand          | ⚖️ Medium              |
+| **GaussianCopula** | Mostly Numerical       | Fast, easy to use                                   | Struggles with complex/mixed data | ⚡ Fast             |
+| **CopulaGAN**      | Numerical, Categorical | Combines GANs with statistical copulas for balance  | Newer model, fewer benchmarks   | ⚡ Fast                 |
+
+""")
+
+
 # Final Navigation Tip
 st.markdown("""
 ---
 
-### 🧭 Next Up: Workflow
+### 🧭 Next Up: The Process
 
-You’ve now met the four core models. Let’s move on to the next chapter, where you’ll walk through the full **workflow** for generating and evaluating synthetic data step-by-step.
+You’ve now met the four core models. Let’s move on to the next chapter, where you’ll walk through the full **process* for generating and evaluating synthetic data step-by-step.
 """)
