@@ -2,7 +2,7 @@ import streamlit as st
 
 # Page Layout & Title
 st.set_page_config(page_title="Chapter 2: Models", layout="wide")
-st.title("Chapter 2: Models")
+st.title("Chapter 2: Models ⚙️")
 
 # Page Description
 st.markdown("""
@@ -147,7 +147,7 @@ The Synthetic Data Vault (SDV) offers a range of synthesizers. Each mdoel is des
 st.markdown("""
 ---
 
-### 🧭 Next Up: The Process
+### Next Up: The Process 🧭 
 
 You’ve now met the four core models. Let’s move on to the next chapter, where you’ll walk through the full **process* for generating and evaluating synthetic data step-by-step.
 """)
