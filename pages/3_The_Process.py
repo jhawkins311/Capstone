@@ -24,8 +24,8 @@ Each tab represents a key stage of the process—from data preparation to result
 # Tabs based on notebook phases
 tab1, tab2, tab3, tab4 = st.tabs([
     "📂 Data Preparation",
-    "⚙️ Training",
-    "🧪 Generating",
+    "🧠 Training",
+    "⚙️ Generating",
     "📊 Evaluating"
 ])
 
@@ -62,7 +62,7 @@ metadata.visualize()
 # Tab 2: Training
 # ---------------------------------------
 with tab2:
-    st.header("⚙️ Training")
+    st.header("🧠 Training")
 
     st.markdown("""
 Once the metadata is prepared, you'll train four synthesizer models on your dataset:
@@ -96,7 +96,7 @@ synthesizer.fit(real_data)
 # Tab 3: Generating
 # ---------------------------------------
 with tab3:
-    st.header("🧪 Generating")
+    st.header("⚙️ Generating")
 
     st.markdown("""
 After training, you’ll generate synthetic data using each model. You’ll also be prompted to enter how many rows to sample.
