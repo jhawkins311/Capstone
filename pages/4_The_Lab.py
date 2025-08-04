@@ -10,6 +10,7 @@ Welcome to the final chapter of **Synthetic Data 101**! 🎓
 
 You've explored the models, workflow, and best practices for working with synthetic data. Now it's time to put that knowledge into action!
 
+---
 
 ### 🧪 Launch the Lab
 
@@ -23,7 +24,7 @@ If you don’t have a dataset to upload, try exploring open resources like:
 - [**Kaggle: Beginner-Friendly Datasets**](https://www.kaggle.com/code/rtatman/fun-beginner-friendly-datasets) 
 
 ---
-⚠️ Ethics & Responsibility Reminder 
+### ⚠️ Ethics & Responsibility Reminder 
 
 Synethic data can reduce privacy risks, but it is not automatically risk-free! 
 
