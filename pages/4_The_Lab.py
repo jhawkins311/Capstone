@@ -6,13 +6,13 @@ st.title("Chapter 4: The Lab 🧪")
 
 # Description
 st.markdown("""
-Welcome to the final chapter of **Synthetic Data 101**! 🎓
+Welcome to the final chapter of **Synthetic Data 101**!
 
 You've explored the models, workflow, and best practices for working with synthetic data. Now it's time to put that knowledge into action!
 
 ---
 
-### 🧪 Launch the Lab
+### 🚀 Launch the Lab
 
 This is a **real synthetic data generator and evaluator** built in Google Colab. No installation or programming knowledge needed. 
 
@@ -52,7 +52,7 @@ st.markdown("""
         cursor: pointer;
         margin-top: 1.5rem;
     '>
-        🚀 Open the Synthetic Data Generator in Google Colab
+        ✨ Open the Synthetic Data Generator in Google Colab ✨
     </button>
 </a>
 """, unsafe_allow_html=True)
