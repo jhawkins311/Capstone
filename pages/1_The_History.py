@@ -14,7 +14,7 @@ In this chapter, you’ll explore the history and motivation behind synthetic da
 
 ### 📉 What’s the Hidden Challenge Behind AI’s Growth?
 
-Artificial intelligence has the key to solving the world’s most complex problems. However, it's growth is dependant on the quality and avaliablility of training data. 
+Artificial intelligence holds the key to solving the world’s most complex problems. However, it's growth is dependant on the quality and avaliablility of training data. 
 
 Currently, there are two major roadblocks: 
 
