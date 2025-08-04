@@ -61,6 +61,7 @@ with tvae_tab:
 
     st.markdown("""
 The **TVAE Synthesizer** relies on **variational autoencoders** (VAEs), which compress and reconstruct the dataset to learn its structure.  
+
 This makes it great for capturing **non-linear patterns** in data—like complex interactions between features.
 
 > **Best for:** Mid-size datasets where relationships between variables are important.
@@ -86,7 +87,9 @@ with gc_tab:
 
     st.markdown("""
 The **GaussianCopula Synthesizer** is the simplest of the four.  
+
 It uses classic statistical transformations to model relationships, assuming a multivariate normal structure.  
+
 While limited to mostly numerical data, it’s **very fast** and **easy to use**, making it ideal for prototyping or educational use.
 
 > **Best for:** Quick generation of synthetic data when speed or simplicity is a priority.
@@ -107,6 +110,7 @@ with copulagan_tab:
 
     st.markdown("""
 The **CopulaGAN Synthesizer** is a **hybrid model** that blends GANs with statistical copulas.  
+
 It offers a middle ground between deep learning complexity and traditional modeling, aiming to balance **accuracy**, **privacy**, and **speed**.
 
 > **Best for:** Scenarios that demand both performance and speed, such as limited-resource environments or pilot testing.
