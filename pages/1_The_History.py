@@ -83,6 +83,8 @@ There are three pillars of synthteic data evaluation:
 3. **Privacy** – How unlikely is it that anyone could re-identify individuals from the synthetic dataset?
 
 This course will walk you through the full process of generating and evaluating synthetic datasets that meet these critical standards. 
+
+
 ---
 
 ### Next Up: The Models ⚙️
