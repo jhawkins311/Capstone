@@ -20,7 +20,7 @@ st.markdown("""
 
 **Synthesizers** are tools that use machine learning algorithms that:
 1) Learn the patterns and characteristics from real datasets
-3) Ceate new synthetic data that maintains the same statistical relationships and format as the original, while being entirely artificial. 
+3) Create artificial data that maintains the same statistical characteristics and behavior as the original
 """)
 
 # Tabs for each model
@@ -31,11 +31,12 @@ with ctgan_tab:
     st.subheader("CTGAN — Conditional Tabular Generative Adversarial Network")
 
     st.markdown("""
-The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality.  
-It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data).  
-CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
+-The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality.  
+-It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data).  
+-CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
 
-> **Best for:** High-stakes, highly structured datasets where accuracy matters most.
+**Best for:** High-stakes, highly structured datasets where accuracy matters most.
+
 """)
 
     with st.expander("Show CTGAN Example Code"):
