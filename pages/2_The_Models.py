@@ -138,7 +138,7 @@ st.markdown("""
 
 The Synthetic Data Vault (SDV) offers a range of synthesizers. Each mdoel is designed with own strengths, limitations, and ideal use cases.
 
-### A Quick Quick to Different SDV Synthesizers:
+### A Quick Guide to Different SDV Synthesizers:
 
 | Model              | Type of Data           | Strengths                                           | Limitations                    | Speed                   |
 |--------------------|------------------------|-----------------------------------------------------|--------------------------------|-------------------------|
