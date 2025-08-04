@@ -52,7 +52,7 @@ st.markdown("""
         cursor: pointer;
         margin-top: 1.5rem;
     '>
-        ✨ Open the Synthetic Data Generator in Google Colab ⭐
+        Open the Synthetic Data Generator in Google Colab
     </button>
 </a>
 """, unsafe_allow_html=True)
