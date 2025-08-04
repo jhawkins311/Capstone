@@ -80,7 +80,7 @@ There are three pillars of synthteic data evaluation:
 
 1. **Accuracy** – How well does the synthetic data reflect the patterns and relationships in the original?
 2. **Utility** – Can machine learning models trained on the synthetic data produce accurate results?
-3. **Privacy** – How unlikely is it that anyone could re-identify individuals from the synthetic dataset?\
+3. **Privacy** – How unlikely is it that anyone could re-identify individuals from the synthetic dataset?
 
 This course will walk you through the full process of generating and evaluating synthetic datasets that meet these critical standards. 
 ---
