@@ -26,7 +26,7 @@ Discover how the need for privacy-preservation lead to the creation of synthetic
 Meet the four core models used to generate synthetic datasets: CTGAN, TVAE, GaussianCopula, and CopulaGAN, 
 
 #### [**Chapter 3: The Process**](https://capstone-dz3iduiobkviwaijgqcvqg.streamlit.app/The_Process)
-Watch a full example of the synthetic data process in action, from uploading a dataset to evaluating the results. 
+See a full example of the synthetic data process in action, from uploading a dataset to evaluating the results. 
 
 #### [**Chapter 4: The Lab**](https://capstone-dz3iduiobkviwaijgqcvqg.streamlit.app/The_Lab)
 Put your knowledge into practice by using our interactive Google CoLAB. Generate multiple synthetic datasets and evaluate them in just a few clicks! 
