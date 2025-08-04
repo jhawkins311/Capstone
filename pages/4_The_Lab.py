@@ -44,7 +44,7 @@ st.markdown("""
     <button style='
         padding: 1.25rem 2.5rem;
         font-size: 1.25rem;
-        background-color: #4CAF50;
+        background-color: #367d39;
         color: white;
         border: none;
         border-radius: 12px;
