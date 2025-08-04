@@ -6,7 +6,7 @@ st.title("Chapter 1: The History 🏛️")
 # Introduction
 st.markdown("""
 
-Welcome to Chapter 1: Origins of the Synthetic Data 101 course!
+Welcome to the origins of synthetic data!
 
 In this chapter, you’ll explore the history and motivation behind synthetic data. You’ll learn how it began as a solution to privacy concerns in public datasets—and how it evolved into a key tool for secure, scalable, and ethical data science.
 
