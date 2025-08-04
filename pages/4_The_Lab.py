@@ -13,7 +13,7 @@ You've explored the models, workflow, and best practices for working with synthe
 
 ### 🧪 Launch the Lab
 
-This is a **real synthetic data generator and evaluator** built in Google Colab. No installation needed. 
+This is a **real synthetic data generator and evaluator** built in Google Colab. No installation or programming knowledge needed. 
 
 You'll upload a dataset, generate synthetic versions using four models, and receive downloadable results and evaluation charts.
 
@@ -22,7 +22,18 @@ If you don’t have a dataset to upload, try exploring open resources like:
 - [**DataCamp’s Dataset Library**](https://www.datacamp.com/datalab/datasets)
 - [**Kaggle: Beginner-Friendly Datasets**](https://www.kaggle.com/code/rtatman/fun-beginner-friendly-datasets) 
 
-**You can do this.** 💪 No coding experience required—just follow the step-by-step instructions in the notebook.
+---
+⚠️ Ethics & Responsibility Reminder 
+
+Synethic data can reduce privacy risks, but it is not automatically risk-free! 
+
+Please remember:  
+- Always use **legally obtained datasets** when uploading a file
+- Models are limited to **10 training epochs** by default. For any production use, **increase training time** and **thoroughly test** your outputs before using them in real-world applications
+- Ensure your generated datasets and evaluation results are clearly labeled as **"Synthetic"**  
+---
+
+**You can do this.** 💪 Just follow the step-by-step instructions in the notebook.
 
 """)
 
