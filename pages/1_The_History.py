@@ -14,7 +14,7 @@ In this chapter, you’ll explore the history and motivation behind synthetic da
 
 ### 📉 What’s the Hidden Challenge Behind AI’s Growth?
 
-Artificial intelligence holds the key to solving the world’s most complex problems. However, it's growth is dependant on the quality and avaliablility of training data. 
+Artificial intelligence holds the key to solving the world’s most complex problems. However, it's growth is dependant on the quality and availability of training data. 
 
 Currently, there are two major roadblocks: 
 
@@ -22,7 +22,7 @@ Currently, there are two major roadblocks:
   The shortage of high-quality labeled data
 
 - **Data Security**  
-  The lack of access to sensitive public or proprietary data
+  The lack of access to proprietary data
 
 These challenges are acute for regulated industries like healthcare and finance where access to sensitive data is highly controlled.  
 
