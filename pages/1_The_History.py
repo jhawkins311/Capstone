@@ -13,21 +13,20 @@ In this chapter, you’ll explore the history and motivation behind synthetic da
 ---
 ### 🧠 What is Synthetic Data?
 
-Synthetic data refers to artificially generated datasets that **mimic real-world data** in structure and behavior while **avoiding any privacy risks**!
+**Synthetic data** refers to artificially generated datasets that replicate the structure and statistical behavior of real-world data without exposing any private information!
 
+This allows data scientists to train and test AI tools with data that is safe to share. 
 ---
-### 📜 The Origin
+### 📜 A Brief History
 
-Synthetic data may seem like a cutting-edge innovation, but its origins stretch back over 30 years.
+The synthetic data may seem like a cutting-edge innovation, but its origins stretch back over 30 years.
 
-In 1993, the U.S. Census Bureau faced a dilemma: how could it share detailed individual survey responses for research and policy purposes **without revealing private identities**? 
+In 1993, the U.S. Census Bureau faced a dilemma: How could it share detailed individual survey responses for research without **without revealing private identities**? 
 
-The answer came from statistician Donald Rubin, who proposed using **statistical models** to generate synthetic data that mirrored the real dataset—without including any actual records. 
-His approach protected privacy while enabling public access. 
+Statistician Donald Rubin proposed using statistical models to generate synthetic records that mimicked the real dataset, but did not contain any actual records. 
+This approach proved it was possible to protected privacy while enabling public access. 
 
-This laid the foundation for today’s synthetic data movement.
-
-Modern tools like MostlyAI, Gretel, and YData generate synthetic records that have been used to:
+Today, modern generation tools (ex: MostlyAI, Gretel, and YData) generate synthetic records that have been used to:
 - Diagnose medical conditions faster  
 - Test financial systems under stress  
 - Train autonomous vehicles without physical crashes
