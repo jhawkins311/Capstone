@@ -31,11 +31,13 @@ with ctgan_tab:
     st.subheader("CTGAN — Conditional Tabular Generative Adversarial Network")
 
     st.markdown("""
--The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality.  
--It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data).  
--CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
+The **CTGAN Synthesizer** uses a GAN-based approach where a generator and discriminator compete to improve output quality.  
 
-**Best for:** High-stakes, highly structured datasets where accuracy matters most.
+It’s particularly effective on **imbalanced** and **mixed-type** datasets (e.g., medical or credit data).  
+
+CTGAN can take longer to train but often produces high-fidelity results that preserve deep feature relationships.
+
+>**Best for:** High-stakes, highly structured datasets where accuracy matters most.
 
 """)
 
