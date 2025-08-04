@@ -11,11 +11,9 @@ st.title("Synthetic Data 101")
 # Text for Homepage - Explains the "course" structure" 
 st.markdown("""
 
-Welcome to Synthetic Data 101! 
+Welcome to the world of synthetic data! 
 
-This is an interactive course designed for students, professionals, and developers eager to explore the world of synthetic data!
-
-Throughout this guided experience, you'll learn about why synethetic data is important, what methods are used to generate it, and how it can be evaluated for reliablity. 
+Throughout this interactive course, you'll learn about why synethetic data is important, what methods are used to generate it, and how it can be evaluated for reliablity. 
 
 ---
 
@@ -40,5 +38,5 @@ Put your knowledge into practice by using our interactive Google CoLAB. Generate
 [COMING SOON: Hyperlink to the final capstone presentation]
 
 
-❤️ This webapp was designed with love for those who want to try synthetic data tools before investing in expensive platforms ❤️
+❤️ This webapp was designed with love for students, professionals, and developers who want to explore free synthetic data tools before investing in expensive platforms ❤️
 """)
