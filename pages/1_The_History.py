@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Chapter 1: The History 🏛️", layout="wide")
+
 # Page title
 st.title("Chapter 1: The History 🏛️")
 
