@@ -43,7 +43,7 @@ Generating has stood out as the most scalable and privacy-safe solution.
 
 Today, over 60% of AI training data is synthetic. 
 
-By 2030, Synthetic Data is expected to overshadow real data when training AI models and the generate over $2.3 in market value! 
+By 2030, Synthetic Data is expected to overshadow real data when training AI models and will generate over $2.3 billion in market value! 
 
 ---
 ### 🧠 What is Synthetic Data?
