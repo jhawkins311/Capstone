@@ -11,29 +11,32 @@ st.title("Synthetic Data 101")
 # Text for Homepage - Explains the "course" structure" 
 st.markdown("""
 
-Welcome to Synthetic Data 101, an interactive course designed for students, data analysts, professionals eager to explore the world of synthetic data!
+Welcome to Synthetic Data 101! 
 
-Throughout this guided experience, you'll learn how synthetic data can be generated, evaluated, and applied—all without writing a single line of code. Whether you're new to the concept or looking to sharpen your skills, this course will walk you through the tools and techniques used by today’s data scientists and privacy engineers.
+This is an interactive course designed for students, professionals, and developers eager to explore the world of synthetic data!
+
+Throughout this guided experience, you'll learn about why synethetic data is important, what methods are used to generate it, and how it can be evaluated for reliablity. 
 
 ---
 
 ### 📚 Course Chapters
 
-#### **Chapter 1: The History**
-Discover how synthetic data came to be, the problems it solves, and why it’s increasingly essential in modern AI and analytics workflows.
+#### [**Chapter 1: The History**](https://capstone-dz3iduiobkviwaijgqcvqg.streamlit.app/The_History)
+Discover how the need for privacy-preservation lead to the creation of synthetic data and why it's essential for modern AI tools
 
-#### **Chapter 2: The Models**
-Meet the four core models used to generate synthetic datasets: CTGAN, TVAE, GaussianCopula, and CopulaGAN. Learn what makes each model unique—and when to use them.
+#### [**Chapter 2: The Models**](https://capstone-dz3iduiobkviwaijgqcvqg.streamlit.app/The_Models)
+Meet the four core models used to generate synthetic datasets: CTGAN, TVAE, GaussianCopula, and CopulaGAN, 
 
-#### **Chapter 3: The Process**
-Follow the simple process for creating synthetic data, including uploading a dataset, training generative models, sampling synthetic data, and evaluating the results—all within your browser.
+#### [**Chapter 3: The Process**](https://capstone-dz3iduiobkviwaijgqcvqg.streamlit.app/The_Process)
+Watch a full example of the synthetic data process in action, from uploading a dataset to evaluating the results. 
 
-#### **Chapter 4: The Lab**
-Put your knowledge into practice using our interactive Google Colab lab. Generate your own synthetic datasets and run advanced evaluation metrics with just a few clicks.
+#### [**Chapter 4: The Lab**](https://capstone-dz3iduiobkviwaijgqcvqg.streamlit.app/The_Lab)
+Put your knowledge into practice by using our interactive Google CoLAB. Generate multiple synthetic datasets and evaluate them in just a few clicks! 
 
 ---
 
 ### If you would like to learn how this tool was developed, please check out the full research project: 
+
 [COMING SOON: Hyperlink to the final capstone presentation]
 
 
