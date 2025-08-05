@@ -6,7 +6,7 @@ st.title("Chapter 3: The Process 🧭")
 
 # Intro Text
 st.markdown("""
-Welcome to Chapter 3: Workflow of the Synthetic Data 101 course!
+Welcome to the synthetic data process!
 
 This chapter walks you through the **entire synthetic data generation lifecycle**, based on the structure of our **Google Colab Lab Notebook**. 
 
@@ -14,16 +14,17 @@ This chapter walks you through the **entire synthetic data generation lifecycle*
 
 ### The Lifecycle of Synthetic Data
 
-Now that you’ve learned about the models, it’s time to walk through the complete process of generating synthetic data.
+Now that you’ve learned about synthesizer models, it’s time to walk through the complete process of generating and evaluating synthetic data.
 
-Each tab represents a key stage of the process—from data preparation to results evaluation. Follow the visuals and code snippets from our example tests on the **Adult Census Dataset**.
+Each tab represents a key stage of the process. 
 
-> ⚠️ *This page is a walkthrough only. For real execution, please visit the Lab in Chapter 4.*
+Follow the visuals and code snippets from our example tests on the **Adult Census Dataset**.
+
 """)
 
 # Tabs based on notebook phases
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📂 Data Preparation",
+    "📂 Preparing",
     "🧠 Training",
     "⚙️ Generating",
     "📊 Evaluating"
@@ -33,7 +34,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
 # Tab 1: Data Preparation
 # ---------------------------------------
 with tab1:
-    st.header("📂 Data Preparation")
+    st.header("📂 Preparing")
 
     st.markdown("""
 Before training a synthesizer, you'll need to load your data and generate its metadata.
