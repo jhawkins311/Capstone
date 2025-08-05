@@ -6,7 +6,7 @@ st.title("Chapter 2: The Models ⚙️")
 
 # Page Description
 st.markdown("""
-Welcome to the synthetic data models libarary!
+Welcome to the synthetic data models library!
 
 In this chapter, you'll explore four foundational models from the [Synthetic Data Vault (SDV)](https://docs.sdv.dev/). 
 
