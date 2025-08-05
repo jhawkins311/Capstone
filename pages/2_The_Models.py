@@ -6,7 +6,7 @@ st.title("Chapter 2: The Models ⚙️")
 
 # Page Description
 st.markdown("""
-Welcome to **Chapter 2: Models** of the Synthetic Data 101 course!
+Welcome to the synthetic data models catalogue!
 
 In this chapter, you'll explore four foundational models from the [Synthetic Data Vault (SDV)](https://docs.sdv.dev/) library. 
 
@@ -43,16 +43,23 @@ CTGAN can take longer to train but often produces high-fidelity results that pre
 
     with st.expander("Show CTGAN Example Code"):
         st.code("""
+# Create the CTGAN Model
 from sdv.single_table import CTGANSynthesizer
 
-synthesizer = CTGANSynthesizer(
-    metadata,           # required
+# The CTGAN model trains on the metadata to learn the data's structure (ex: what the synthetic dataset should look like) 
+# The metadata describes the structure of the data (column types, constraints, etc.)
+CTGAN_synthesizer = CTGANSynthesizer(
+    metadata,        
     enforce_rounding=False,
-    epochs=00,
+    epochs=300,
     verbose=True
 )
-synthesizer.fit(real_data)
-synthetic_data = synthesizer.sample(num_rows=1000)
+
+# The CTGAN model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
+CTGAN_synthesizer.fit(real_data)
+
+# A 1000 row synthetic dataset is generated from the CTGAN model
+ctgan_synthetic_data = CTGAN_synthesizer.sample(num_rows=1000)
         """, language="python")
 
 # --- TVAE Tab ---
@@ -69,15 +76,22 @@ This makes it great for capturing **non-linear patterns** in data—like complex
 
     with st.expander("Show TVAE Example Code"):
         st.code("""
+# Create the TVAE Model        
 from sdv.single_table import TVAESynthesizer
 
+# The TVAE model trains on the metadata to learn the data's structure (ex: what the synthetic dataset should look like) 
+# The metadata describes the structure of the data (column types, constraints, etc.)
 synthesizer = TVAESynthesizer(
-    metadata,           # required
+    metadata,           
     enforce_rounding=False,
     epochs=300,
     verbose=True
 )
+
+# The TVAE model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
 synthesizer.fit(real_data)
+
+# A 1000 row synthetic dataset is generated from the TVAE model
 synthetic_data = synthesizer.sample(num_rows=1000)
         """, language="python")
 
@@ -97,10 +111,17 @@ While limited to mostly numerical data, it’s **very fast** and **easy to use**
 
     with st.expander("Show GaussianCopula Example Code"):
         st.code("""
+# Create the GaussianCopula Model
 from sdv.single_table import GaussianCopulaSynthesizer
 
+# The GaussianCopula model trains on the metadata to learn the data's structure (ex: what the synthetic dataset should look like) 
+# The metadata describes the structure of the data (column types, constraints, etc.)
 synthesizer = GaussianCopulaSynthesizer(metadata)
+
+# The GaussianCopula model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
 synthesizer.fit(real_data)
+
+# A 1000 row synthetic dataset is generated from the GaussianCopula model
 synthetic_data = synthesizer.sample(num_rows=1000)
         """, language="python")
 
@@ -118,15 +139,21 @@ It offers a middle ground between deep learning complexity and traditional model
 
     with st.expander("Show CopulaGAN Example Code"):
         st.code("""
+# Create the CopulaGAN Model
 from sdv.single_table import CopulaGANSynthesizer
 
+# The CopulaGAN model trains on the metadata to learn the data's structure (ex: what the synthetic dataset should look like) 
 synthesizer = CopulaGANSynthesizer(
     metadata,
     enforce_rounding=False,
     epochs=300,
     verbose=True
 )
+
+# The CopulaGAN model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
 synthesizer.fit(real_data)
+
+# A 1000 row synthetic dataset is generated from the CopulaGAN model
 synthetic_data = synthesizer.sample(num_rows=1000)
         """, language="python")
 
