@@ -23,11 +23,11 @@ with tab1:
     # Step 1
     st.subheader("1. Install Dependencies")
     st.markdown("""
-To run the Lab, you’ll need to install the required tools (like SDV, Pandas, Plotly, and more).
-These handle all data processing and synthetic generation for you.
+To run the Lab, you’ll need to install the required tools (like SDV, Pandas, Plotly, and others).
+These handle all data processing and synthetic generation.
 
 *Why this matters:*  
-Without these, nothing else in the workflow can work!
+Without these, nothing else works!
 """)
     st.image("path_to_image1.png", caption="Installing required tools")
 
@@ -35,7 +35,7 @@ Without these, nothing else in the workflow can work!
     st.subheader("2. Import Libraries")
     st.markdown("""
 Once installed, the Lab loads all the features it needs behind the scenes.
-You don’t need to do anything—just watch for a “Success” message.
+You don’t need to do anything! just watch for a “Success” message.
 
 *Why this matters:*  
 All buttons and features in the notebook rely on these libraries.
@@ -69,7 +69,7 @@ Taking out sensitive info protects privacy—even before creating synthetic data
     # Step 4
     st.subheader("4. Create Metadata")
     st.markdown("""
-The Lab automatically detects what type of information is in your data—numbers, categories, dates, etc.
+The Lab automatically detects what type of information is in your data: numbers, categories, dates, etc.
 You’ll see a visual summary to check for accuracy before moving ahead.
 
 *Why this matters:*  
@@ -86,8 +86,8 @@ with tab2:
     # Step 5
     st.subheader("5. Train Synthesizers (10 Epochs)")
     st.markdown("""
-The Lab uses **four different engines**—CTGAN, TVAE, GaussianCopula, and CopulaGAN—to learn from your data.
-Each engine tries a different method, so you get more than one result to compare.
+The Lab uses **four different engines**, CTGAN, TVAE, GaussianCopula, and CopulaGAN, to learn from your data.
+Each engine tries a different method, so you get a bunch of results to compare.
 
 - Training is set for 10 rounds (epochs) by default for speed.
 - For best results, use more epochs when time allows!
@@ -107,7 +107,7 @@ with tab3:
     st.subheader("6. Generate Synthetic Datasets")
     st.markdown("""
 Choose how many rows of synthetic data you want.  
-Each engine creates its own synthetic table—mimicking your original data, but without copying it.
+Each engine creates its own synthetic table. This mimics your original data, but doesn't copy it.
 
 *Why this matters:*  
 This gives you new, privacy-safe datasets for analysis, sharing, or AI training.
@@ -166,7 +166,7 @@ Low accuracy? That model might be missing important patterns.
     st.info("""
 Shows how well the synthetic data mimics the statistical distributions and relationships of the original data.  
 **Why it matters:**  
-High utility means your synthetic data is *useful*—analytics and AI models will behave as expected.  
+High utility means your synthetic data is *useful*. This means analytics and AI models will behave as expected.  
 Low utility? The data may “look right” but can lead to misleading insights.
 """)
 
@@ -176,7 +176,7 @@ Low utility? The data may “look right” but can lead to misleading insights.
     st.info("""
 Shows the privacy risk for each synthetic dataset (lower is better).  
 **Why it matters:**  
-A low privacy risk score means the synthetic data offers strong protection against re-identification—crucial for privacy compliance and ethical use.
+A low privacy risk score means the synthetic data offers strong protection against re-identification; this is crucial for privacy compliance and ethical use.
 """)
 
     # 4️⃣ Column Comparison Plot
@@ -185,7 +185,7 @@ A low privacy risk score means the synthetic data offers strong protection again
     st.info("""
 Lets you pick a column and compare its values in the real vs. synthetic datasets.  
 **Why it matters:**  
-Helps you see if each model captures detailed patterns for individual features—great for spotting overfitting, underfitting, or outliers.
+Helps you see if each model captures detailed patterns for individual features: great for spotting overfitting, underfitting, or outliers.
 """)
 
     # 5️⃣ Per-Column Similarity Chart
@@ -206,7 +206,7 @@ Summarizes the scores and recommends the best synthetic dataset overall, balanci
 Gives you a clear, one-glance answer: Which synthetic data is safest and most useful for your needs.
 """)
 
-    st.success("This dashboard makes it easy to understand and justify your synthetic data choices—even if you’re not a data scientist!")
+    st.success("This dashboard makes it easy to understand and justify your synthetic data choices... even if you’re not a data scientist!")
 
     # Step 9b: Report
     st.subheader("9b. Generate Evaluation Report (Word Document)")
@@ -218,8 +218,6 @@ Download a Word report for documentation, compliance, or sharing with your team.
 You have a record of your process, comparisons, and proof of privacy protection.
 """)
     st.image("path_to_image11.png", caption="Download the evaluation report")
-
-    st.success("🎉 You’ve completed all steps! Your synthetic data is now ready to use or share—privacy evaluated and results documented.")
 
 
 # Final Navigation Tip
