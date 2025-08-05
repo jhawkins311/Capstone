@@ -6,9 +6,9 @@ st.title("Chapter 2: The Models ⚙️")
 
 # Page Description
 st.markdown("""
-Welcome to the synthetic data models catalogue!
+Welcome to the synthetic data models libarary!
 
-In this chapter, you'll explore four foundational models from the [Synthetic Data Vault (SDV)](https://docs.sdv.dev/) library. 
+In this chapter, you'll explore four foundational models from the [Synthetic Data Vault (SDV)](https://docs.sdv.dev/). 
 
 """)
 
@@ -58,7 +58,7 @@ CTGAN_synthesizer = CTGANSynthesizer(
 # The CTGAN model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
 CTGAN_synthesizer.fit(real_data)
 
-# A 1000 row synthetic dataset is generated from the CTGAN model
+# A 1,000 row synthetic dataset is generated from the CTGAN model
 ctgan_synthetic_data = CTGAN_synthesizer.sample(num_rows=1000)
         """, language="python")
 
@@ -91,7 +91,7 @@ synthesizer = TVAESynthesizer(
 # The TVAE model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
 synthesizer.fit(real_data)
 
-# A 1000 row synthetic dataset is generated from the TVAE model
+# A 1,000 row synthetic dataset is generated from the TVAE model
 synthetic_data = synthesizer.sample(num_rows=1000)
         """, language="python")
 
@@ -121,7 +121,7 @@ synthesizer = GaussianCopulaSynthesizer(metadata)
 # The GaussianCopula model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
 synthesizer.fit(real_data)
 
-# A 1000 row synthetic dataset is generated from the GaussianCopula model
+# A 1,000 row synthetic dataset is generated from the GaussianCopula model
 synthetic_data = synthesizer.sample(num_rows=1000)
         """, language="python")
 
@@ -153,7 +153,7 @@ synthesizer = CopulaGANSynthesizer(
 # The CopulaGAN model trains on the original dataset to learn pattern and relationships (ex: what the synthetic dataset should contain)
 synthesizer.fit(real_data)
 
-# A 1000 row synthetic dataset is generated from the CopulaGAN model
+# A 1,000 row synthetic dataset is generated from the CopulaGAN model
 synthetic_data = synthesizer.sample(num_rows=1000)
         """, language="python")
 
