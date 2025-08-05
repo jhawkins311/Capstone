@@ -8,7 +8,7 @@ st.title("Chapter 4: The Lab 🧪")
 st.markdown("""
 Welcome to the final chapter of **Synthetic Data 101**!
 
-You've explored the models, workflow, and best practices for working with synthetic data. Now it's time to put that knowledge into action!
+You've explored the history, models, workflow, and even best practices for working with synthetic data. Now it's time to put that knowledge into action!
 
 ---
 
