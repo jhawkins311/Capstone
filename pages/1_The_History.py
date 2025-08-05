@@ -10,7 +10,7 @@ st.markdown("""
 
 Welcome to the history of synthetic data!
 
-In this chapter, you’ll learn how synthetic data began as a solution to privacy concerns in public datasets—and how it evolved into a key tool for secure, scalable, and ethical data science.
+In this chapter, you’ll learn how synthetic data began as a solution to privacy concerns in public datasets **and** how it evolved into a key tool for secure, scalable, and ethical data science.
 
 ---
 
